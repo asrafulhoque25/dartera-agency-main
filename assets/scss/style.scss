@@ -2223,7 +2223,6 @@ body {
 }
 .so-quality-title {
     padding: 15px 0;
-    border-top: 1px solid #b8c5d4;
     &::before {
         counter-increment: so-counter;
         content: counter(so-counter) " ";
@@ -2247,9 +2246,6 @@ body {
 .so-quality {
     border-top: 1px solid #b8c5d4;
     padding: 20px 0;
-    &:last-child {
-        border-bottom: 1px solid #b8c5d4;
-    }
 }
 
 /*--- (6.1) --- Strong optimize style -/ End ---*/
