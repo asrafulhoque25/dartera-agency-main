@@ -44,6 +44,10 @@
     <!-- CDN Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap">
+
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- Main CSS -->
@@ -384,7 +388,8 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="blog-header">
-                        <h6 class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
+                        <h6
+                            class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
                             Dienstleistungen
                         </h6>
                         <h2 class="blog-title fs-48 text-gray_1 fw-bold mb-4">
@@ -392,8 +397,7 @@
                         </h2>
                         <div class="author d-flex gap-3 align-items-center mb-4 pb-2">
                             <div class="author-img">
-                                <img src="assets/img/author-img.png" alt="author img"
-                                    class="img-fluid w-auto">
+                                <img src="assets/img/author-img.png" alt="author img" class="img-fluid w-auto">
                             </div>
                             <a href="#" class="author-info d-flex align-items-center gap-3 text-decoration-none">
                                 <p class="mb-0 text-gray_1 fs-6">Written By <b>Daniel Eskandar</b>
@@ -404,8 +408,7 @@
                         </div>
                     </div>
                     <div class="featured-img radius-12 overflow-hidden mb-4 pb-2">
-                        <img src="assets/img/blog-details-featured-img.jpg" alt="Featured image"
-                            class="img-fluid">
+                        <img src="assets/img/blog-details-featured-img.jpg" alt="Featured image" class="img-fluid">
                     </div>
                     <div class="blog-post-content">
                         <p class="mb-0 text-gray_2 fs-5">
@@ -451,12 +454,12 @@
                             erwähnen, dass die Suchfunktionen von Groove verbessert werden könnten.
                         </p>
 
-                        <div class="promotion-box radius-16">
+                        <div class="promotion-box radius-16 text-center text-md-start">
                             <p class="fs-6 text-gray_3 fw-medium text-uppercase lt-space-05 mb-0">
                                 Literatur-Empfehlungen
                             </p>
-                            <div class="promotion-img-title d-flex align-items-center gap-4 mt-3">
-                                <div class="">
+                            <div class="promotion-img-title d-md-flex align-items-center gap-4 mt-3">
+                                <div class="flex-shrink-0 mb-3 mb-md-0">
                                     <img src="assets/img/promotion-box-img.jpg" alt="Promotion"
                                         class="img-fluid radius-4">
                                 </div>
@@ -522,13 +525,25 @@
                         </p>
 
                         <div class="post-inner-video pt-60 pb-60">
-                            <div class="position-relative">
-                                <img src="assets/img/post-video-thumb.jpg" alt="Featured image"
-                                    class="img-fluid radius-4">
-                                <a href="#" class="play-btn position-absolute">
-                                    <img src="assets/img/video-play-btn.svg" alt="Featured image" class="img-fluid">
-                                </a>
+                            <!-- for video -->
+                            <div class="videoCoverImage position-relative">
+                                <div
+                                    onclick="thevid=document.querySelector('.blog-video'); thevid.style.display='block'; this.style.display='none'">
+                                    <img class="thumb w-100" style="cursor: pointer;"
+                                        src="assets/img/post-video-thumb.jpg">
+                                    <div class="play-btn position-absolute" style="cursor: pointer;">
+                                        <img src="assets/img/video-play-btn.svg" alt="icon" class="img-fluid">
+                                    </div>
+                                </div>
+
+                                <div class="blog-video" style="display: none;">
+                                    <iframe width="100%" height="400"
+                                        src="https://www.youtube.com/embed/oNPTWlU4u4g?rel=0;&autoplay=1&mute=1&loop=1"
+                                        frameborder="0" allowfullscreen="" include="">
+                                    </iframe>
+                                </div>
                             </div>
+                            <!-- for video -->
                         </div>
 
                         <p class="fs-18 text-gray_2 mb-0 pb-60">
@@ -631,12 +646,14 @@
                             Unternehmens am besten erfüllt.
                         </p>
 
-                        <div class="social-share-box radius-16 d-flex align-items-center justify-content-between gap-4">
-                            <h6 class="fs-5 fw-bold text-lapis_lazuli mb-0">
+                        <div
+                            class="social-share-box radius-16 text-center text-md-start d-md-flex align-items-center justify-content-between gap-4">
+                            <h6 class="fs-5 fw-bold text-lapis_lazuli mb-4 mb-md-0">
                                 Teilen Sie mit einem Freund.
                             </h6>
 
-                            <div class="social-share-icons d-flex align-items-center gap-3">
+                            <div
+                                class="social-share-icons d-flex justify-content-center justify-content-md-start align-items-center gap-3">
                                 <a href="#"
                                     class="single-icon rounded-pill d-flex align-items-center justify-content-center transition-02">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -679,11 +696,14 @@
                             </div>
                         </div>
 
-                        <div class="author-bio radius-16 d-flex align-items-center gap-4 mt-30">
-                            <img src="assets/img/author-bio-img.png" alt="Author" class="img-fluid">
+                        <div
+                            class="author-bio radius-16 text-center text-md-start d-md-flex align-items-center gap-4 mt-30 mb-4 mb-lg-0">
+                            <img src="assets/img/author-bio-img.png" alt="Author" class="img-fluid mb-4 mb-md-0">
                             <div class="">
-                                <h6 class="fs-5 fw-bold text-gray_1 mb-0 pb-1">
-                                    Daniel Eskandar
+                                <h6 class="fs-5 fw-bold mb-0 pb-1">
+                                    <a href="#" class=" text-gray_1 text-decoration-none">
+                                        Daniel Eskandar
+                                    </a>
                                 </h6>
                                 <p class="fs-6 text-gray_2 mb-0 pt-1">
                                     Daniel Eskandar ist Growth Marketing Specialist bei Help Dartera, wo wir exzellenten
@@ -695,7 +715,310 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    Sidebar
+                    <aside id="sidebar">
+                        <div class="sidebar-widget border radius-12 mb-4 overflow-hidden">
+                            <h4 class="widget-title fw-semi-bold fs-4 text-gray_1 bg-gray_7 px-4 py-3 mb-3">
+                                Kategorien
+                            </h4>
+                            <div class="widget-body p-4">
+                                <ul class="categorise-list list-unstyled mb-0">
+                                    <li class="mb-3">
+                                        <a href="#"
+                                            class="text-gray_2 fs-5 fw-normal d-flex align-items-center gap-3 justify-content-between text-decoration-none">
+                                            Webdesign
+                                            <span class="total-post">(03)</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#"
+                                            class="text-gray_2 fs-5 fw-normal d-flex align-items-center gap-3 justify-content-between text-decoration-none">
+                                            SEO
+                                            <span class="total-post">(05)</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#"
+                                            class="text-gray_2 fs-5 fw-normal d-flex align-items-center gap-3 justify-content-between text-decoration-none">
+                                            Content
+                                            <span class="total-post">(02)</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#"
+                                            class="text-gray_2 fs-5 fw-normal d-flex align-items-center gap-3 justify-content-between text-decoration-none">
+                                            Animations
+                                            <span class="total-post">(04)</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#"
+                                            class="text-gray_2 fs-5 fw-normal d-flex align-items-center gap-3 justify-content-between text-decoration-none">
+                                            Maintenance
+                                            <span class="total-post">(07)</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#"
+                                            class="text-gray_2 fs-5 fw-normal d-flex align-items-center gap-3 justify-content-between text-decoration-none">
+                                            SEA
+                                            <span class="total-post">(02)</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-0">
+                                        <a href="#"
+                                            class="text-gray_2 fs-5 fw-normal d-flex align-items-center gap-3 justify-content-between text-decoration-none">
+                                            Branding
+                                            <span class="total-post">(05)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sidebar-widget border radius-12 mb-4 overflow-hidden">
+                            <h4 class="widget-title fw-semi-bold fs-4 text-gray_1 bg-gray_7 px-4 py-3 mb-0">
+                                Trending
+                            </h4>
+                            <div class="widget-body p-4">
+                                <ul class="trending-list  list-unstyled mb-0">
+                                    <li>
+                                        <a href="blog-details.html"
+                                            class="single-blog radius-12 text-decoration-none d-flex gap-3 align-items-center mb-4">
+                                            <span class="blog-img overflow-hidden radius-12 d-block flex-shrink-0">
+                                                <img src="assets/img/blog-small-img1.png" alt="Featured Image"
+                                                    class="img-fluid w-100">
+                                            </span>
+                                            <span class="blog-info">
+                                                <span class="blog-title text-gray_1 fs-12 fw-medium d-block">
+                                                    Einrichtungsanleitung: So erstellen Sie einen gemeinsamen
+                                                    Posteingang in
+                                                    Gmail
+                                                </span>
+                                                <span class="post-time mb-0 fs-12 fw-normal text-gray_3 d-block">
+                                                    8 hours ago
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-details.html"
+                                            class="single-blog radius-12 text-decoration-none d-flex gap-3 align-items-center mb-4">
+                                            <span class="blog-img overflow-hidden radius-12 d-block flex-shrink-0">
+                                                <img src="assets/img/blog-small-img2.png" alt="Featured Image"
+                                                    class="img-fluid w-100">
+                                            </span>
+                                            <span class="blog-info">
+                                                <span class="blog-title text-gray_1 fs-12 fw-medium d-block">
+                                                    Ankündigung der Partnerschaft zwischen Help Dartera und Bambee...
+                                                </span>
+                                                <span class="post-time mb-0 fs-12 fw-normal text-gray_3 d-block">
+                                                    8 hours ago
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-details.html"
+                                            class="single-blog radius-12 text-decoration-none d-flex gap-3 align-items-center mb-4">
+                                            <span class="blog-img overflow-hidden radius-12 d-block flex-shrink-0">
+                                                <img src="assets/img/blog-small-img3.png" alt="Featured Image"
+                                                    class="img-fluid w-100">
+                                            </span>
+                                            <span class="blog-info">
+                                                <span class="blog-title text-gray_1 fs-12 fw-medium d-block">
+                                                    Einrichtungsanleitung: So erstellen Sie einen gemeinsamen
+                                                    Posteingang in
+                                                    Gmail
+                                                </span>
+                                                <span class="post-time mb-0 fs-12 fw-normal text-gray_3 d-block">
+                                                    8 hours ago
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-details.html"
+                                            class="single-blog radius-12 text-decoration-none d-flex gap-3 align-items-center mb-0">
+                                            <span class="blog-img overflow-hidden radius-12 d-block flex-shrink-0">
+                                                <img src="assets/img/blog-small-img4.png" alt="Featured Image"
+                                                    class="img-fluid w-100">
+                                            </span>
+                                            <span class="blog-info">
+                                                <span class="blog-title text-gray_1 fs-12 fw-medium d-block">
+                                                    Die 10 besten Web-Helpdesk-Optionen für wachsende Unternehmen...
+                                                </span>
+                                                <span class="post-time mb-0 fs-12 fw-normal text-gray_3 d-block">
+                                                    8 hours ago
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sidebar-widget border radius-12 mb-4 overflow-hidden">
+                            <h4 class="widget-title fw-semi-bold fs-4 text-gray_1 bg-gray_7 px-4 py-3 mb-0">
+                                Bekannter Beitrag
+                            </h4>
+                            <div class="widget-body p-4">
+                                <ul class="bekannter-list list-unstyled mb-0">
+                                    <li>
+                                        <a href="blog-details.html"
+                                            class="single-blog radius-12 text-decoration-none d-flex gap-3 align-items-center mb-4">
+                                            <span class="blog-img overflow-hidden radius-12 d-block flex-shrink-0">
+                                                <img src="assets/img/blog-small-img1.png" alt="Featured Image"
+                                                    class="img-fluid w-100">
+                                            </span>
+                                            <span class="blog-info">
+                                                <span class="blog-title text-gray_1 fs-12 fw-medium d-block">
+                                                    Einrichtungsanleitung: So erstellen Sie einen gemeinsamen
+                                                    Posteingang in
+                                                    Gmail
+                                                </span>
+                                                <span class="post-time mb-0 fs-12 fw-normal text-gray_3 d-block">
+                                                    8 hours ago
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-details.html"
+                                            class="single-blog radius-12 text-decoration-none d-flex gap-3 align-items-center mb-4">
+                                            <span class="blog-img overflow-hidden radius-12 d-block flex-shrink-0">
+                                                <img src="assets/img/blog-small-img2.png" alt="Featured Image"
+                                                    class="img-fluid w-100">
+                                            </span>
+                                            <span class="blog-info">
+                                                <span class="blog-title text-gray_1 fs-12 fw-medium d-block">
+                                                    Ankündigung der Partnerschaft zwischen Help Dartera und Bambee...
+                                                </span>
+                                                <span class="post-time mb-0 fs-12 fw-normal text-gray_3 d-block">
+                                                    8 hours ago
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-details.html"
+                                            class="single-blog radius-12 text-decoration-none d-flex gap-3 align-items-center mb-4">
+                                            <span class="blog-img overflow-hidden radius-12 d-block flex-shrink-0">
+                                                <img src="assets/img/blog-small-img3.png" alt="Featured Image"
+                                                    class="img-fluid w-100">
+                                            </span>
+                                            <span class="blog-info">
+                                                <span class="blog-title text-gray_1 fs-12 fw-medium d-block">
+                                                    Einrichtungsanleitung: So erstellen Sie einen gemeinsamen
+                                                    Posteingang in
+                                                    Gmail
+                                                </span>
+                                                <span class="post-time mb-0 fs-12 fw-normal text-gray_3 d-block">
+                                                    8 hours ago
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-details.html"
+                                            class="single-blog radius-12 text-decoration-none d-flex gap-3 align-items-center mb-0">
+                                            <span class="blog-img overflow-hidden radius-12 d-block flex-shrink-0">
+                                                <img src="assets/img/blog-small-img4.png" alt="Featured Image"
+                                                    class="img-fluid w-100">
+                                            </span>
+                                            <span class="blog-info">
+                                                <span class="blog-title text-gray_1 fs-12 fw-medium d-block">
+                                                    Die 10 besten Web-Helpdesk-Optionen für wachsende Unternehmen...
+                                                </span>
+                                                <span class="post-time mb-0 fs-12 fw-normal text-gray_3 d-block">
+                                                    8 hours ago
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sidebar-widget border radius-12 mb-4 overflow-hidden">
+                            <div class="widget-body p-4">
+                                <div class="text-center text-lg-start">
+                                    <div class="w-img mb-4">
+                                        <img src="assets/img/widget-img.png" alt="img" class="img-fluid">
+                                    </div>
+                                    <h3 class="text-gray_1 fs-4 fw-bold d-block mb-4">
+                                        Einrichtungsanleitung: So erstellen Sie einen gemeinsamen Posteingang in
+                                        Gmail
+                                    </h3>
+                                </div>
+                                <div class="CTA-form-wrapper">
+                                    <form class="CTA-form">
+                                        <div class="mb-3">
+                                            <label for="myemail"
+                                                class="fs-14 text-gray_1 lt-space-05 fw-medium mb-1">E-Mail</label>
+                                            <input type="email" class="form-control radius-4 text-gray_4 h-52"
+                                                placeholder="hey@dartera.ch" id="myemail">
+                                        </div>
+                                        <!-- Common Buttons -/ Start -->
+                                        <div class="common-btn">
+                                            <a href="#"
+                                                class="fill-btn fw-semi-bold text-gray_1 text-center lh-20 h-52 text-decoration-none bg-flourescent_blue radius-4 d-block">
+                                                <span>Abonnieren</span>
+                                            </a>
+                                        </div>
+                                        <!-- Common Buttons -/ End -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-widget border radius-12 mb-4 overflow-hidden">
+                            <h4 class="widget-title fw-semi-bold fs-4 text-gray_1 bg-gray_7 px-4 py-3 mb-0">
+                                Beliebte Schlagwörter
+                            </h4>
+                            <div class="widget-body p-4">
+                                <ul class="tag-list list-unstyled mb-0 d-flex gap-3 flex-wrap">
+                                    <li class="mb-3">
+                                        <a href="#"
+                                            class="text-gray_4 fs-14 fw-medium px-3 py-2 border text-decoration-none radius-4 ls-5">
+                                            Webdesign
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#"
+                                            class="text-gray_4 fs-14 fw-medium px-3 py-2 border text-decoration-none radius-4 ls-5">
+                                            SEO
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#"
+                                            class="text-gray_4 fs-14 fw-medium px-3 py-2 border text-decoration-none radius-4 ls-5">
+                                            Content
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#"
+                                            class="text-gray_4 fs-14 fw-medium px-3 py-2 border text-decoration-none radius-4 ls-5">
+                                            Animations
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#"
+                                            class="text-gray_4 fs-14 fw-medium px-3 py-2 border text-decoration-none radius-4 ls-5">
+                                            Maintenance
+                                        </a>
+                                    </li>
+                                    <li class="mb-0">
+                                        <a href="#"
+                                            class="text-gray_4 fs-14 fw-medium px-3 py-2 border text-decoration-none radius-4 ls-5">
+                                            SEA
+                                        </a>
+                                    </li>
+                                    <li class="mb-0">
+                                        <a href="#"
+                                            class="text-gray_4 fs-14 fw-medium px-3 py-2 border text-decoration-none radius-4 ls-5">
+                                            Branding
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </div>
