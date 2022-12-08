@@ -974,43 +974,6 @@ body {
     animation-duration: 8s;
     //   animation-iteration-count: infinite;
 }
-<<<<<<< HEAD
-=======
-
-@keyframes animation {
-    0% {
-        left: -500px;
-        top: 400px;
-    }
-
-    //   50% {left: 100px;top:100px;}
-    // //   75% {left: 200px;top:50px;}
-
-    //     0% {
-    //     left: 5px;
-    //     top: 5px;
-    // }
-    25% {
-        left: 10px;
-        top: 10px;
-    }
-
-    50% {
-        left: 0px;
-        top: 0px;
-    }
-
-    75% {
-        left: 15px;
-        top: 15px;
-    }
-
-    100% {
-        left: 0;
-        top: 0;
-    }
-}
->>>>>>> ca0df58b1ef395721c0837a28a0b5b4c462e8896
 
 .contact-toggle {
     position: fixed;
@@ -2433,14 +2396,6 @@ body {
     counter-reset: so-counter;
 }
 
-<<<<<<< HEAD
-=======
-.so-quality-list {
-    &:last-child {
-        border-bottom: 1px solid #b8c5d4;
-    }
-}
->>>>>>> ca0df58b1ef395721c0837a28a0b5b4c462e8896
 
 .so-quality-title {
     padding: 15px 0;
