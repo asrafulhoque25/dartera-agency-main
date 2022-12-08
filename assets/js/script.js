@@ -284,6 +284,31 @@ $(window).on('load', function () {
      });
 
 
+
+
+     // "blog-carousel
+     $(function () {
+         if ($(".blog-slide-active").length) {
+             $(".blog-slide-active").owlCarousel({
+                 loop: true,
+                 items: 1,
+                 margin: 0,
+                 autoplay: true,
+                 nav: true,
+                 autoplayTimeout: 2500,
+                 animateOut: "fadeOut",
+                 smartSpeed: 2500,
+                 navText: ["<i class='ni ni-arrow-long-left text-cyan fs-4'></i>", "<i class='ni ni-arrow-long-right text-cyan fs-4'></i>"],
+                 dots: true,
+                 autoplayHoverPause: true,
+             });
+         }
+     });
+
+
+
+
+
      // wow js init
      // $(function () {
      //   var wow = new WOW({
