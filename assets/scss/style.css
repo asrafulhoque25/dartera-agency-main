@@ -717,7 +717,13 @@ body {
   padding: 16px 36px;
   border: 0px solid var(--flourescent_blue);
   transition: all 0.2s ease-in-out;
-  margin: 0 2px; }
+  margin: 0 2px;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  transition-property: color;
+  cursor: pointer; }
   .fill-btn.resource-filter-btn:hover {
     background: var(--gray_6); }
   .fill-btn:hover {
@@ -725,22 +731,7 @@ body {
     background: #21fff6;
     border-color: #21fff6; }
 
-.hvr-sweep-to-right {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  cursor: pointer;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  border-radius: 4px; }
-
-.hvr-sweep-to-right::before {
+.fill-btn::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -749,29 +740,21 @@ body {
   right: 0;
   bottom: 0;
   background: #11e4dd;
-  -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transform-origin: 0 50%;
   transform-origin: 0 50%;
-  -webkit-transition-property: transform;
   transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-  border-radius: 4px; }
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  border-radius: 4px !important; }
 
-.hvr-sweep-to-right:hover:hover, .hvr-sweep-to-right:hover:focus, .hvr-sweep-to-right:hover:active {
+.fill-btn:hover:hover, .fill-btn:hover:focus, .fill-btn:hover:active {
   color: var(--gray_1); }
 
-.hvr-sweep-to-right:hover::before {
-  -webkit-transform: scaleX(1);
+.fill-btn:hover::before {
   transform: scaleX(1); }
-.hvr-sweep-to-right:focus::before {
-  -webkit-transform: scaleX(1);
+.fill-btn:focus::before {
   transform: scaleX(1); }
-.hvr-sweep-to-right:active::before {
-  -webkit-transform: scaleX(1);
+.fill-btn:active::before {
   transform: scaleX(1); }
 
 .minimal-btn {
