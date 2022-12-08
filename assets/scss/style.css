@@ -88,7 +88,8 @@ body {
   --warning_shade: #feffd9;
   --light_white: #b5d5f4;
   --blue-eyes: #acd5ff;
-  --dark_6: #d8e2df; }
+  --dark_6: #d8e2df;
+  --cornflower-blue: #B5D5F4; }
 
 /* reset, root - END */
 @media (min-width: 1400px) {
@@ -129,6 +130,9 @@ body {
 
 .text-flourescent_blue_light {
   color: var(--flourescent_blue_light); }
+
+.text-cornflower-blue {
+  color: var(--cornflower-blue); }
 
 .text-thristle_purple_light {
   color: var(--thristle_purple_light); }
@@ -210,6 +214,9 @@ body {
 
 .bg-indigo_dye_light {
   background-color: var(--indigo_dye_light); }
+
+.bg-cornflower-blue {
+  background-color: var(--cornflower-blue); }
 
 .bg-flourescent_blue {
   background-color: var(--flourescent_blue); }
@@ -1524,7 +1531,7 @@ body {
   display: none; }
   @media (max-width: 1200px) {
     .common-slider .owl-dots {
-      display: block;
+      display: block !important;
       text-align: center;
       margin-top: 50px; }
       .common-slider .owl-dots .owl-dot span {
@@ -1962,5 +1969,113 @@ body {
       z-index: 1; }
 
 /*-- Context Menue CSS ---*/
+/*-- Portfolio details SEA -/Start ---*/
+.objective {
+  padding: 40px; }
+
+.objective-list {
+  counter-reset: so-counter;
+  position: relative;
+  padding-left: 20px; }
+
+.objective-list-item {
+  padding: 5px 0; }
+  .objective-list-item::before {
+    counter-increment: so-counter;
+    content: counter(so-counter) ". ";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--gray_2);
+    position: absolute;
+    left: 0;
+    margin-top: 0px; }
+
+/*-- Portfolio details SEA -/End ---*/
+/*-- Execution style -/Start ---*/
+.execution {
+  background: linear-gradient(180deg, rgba(232, 243, 255, 0.5) 0%, #E8F3FF 100%);
+  z-index: 8; }
+
+.execution-shape-1 {
+  left: 135px;
+  bottom: 73px;
+  z-index: -8; }
+
+.execution-shape-2 {
+  top: 80px;
+  right: 135px;
+  z-index: -9; }
+
+/*-- Execution style -/End ---*/
+/*-- Afzal bhai style -/End ---*/
+/*-- aws-features ---*/
+.aws-features {
+  background-image: url("../img/big-shape.svg"), url("../img/big-shape.svg");
+  background-repeat: no-repeat;
+  background-position: 7% 90%, 90% 7%; }
+
+/*-- aws-features end ---*/
+/*-- process-slider ---*/
+.process-slider .process-slider-active .owl-item {
+  opacity: 0.1 !important; }
+  .process-slider .process-slider-active .owl-item.active {
+    opacity: 1 !important; }
+.process-slider .process-slider-active .owl-nav {
+  margin-top: 50px;
+  position: initial; }
+  .process-slider .process-slider-active .owl-nav button {
+    margin: 0 10px; }
+  .process-slider .process-slider-active .owl-nav .owl-prev, .process-slider .process-slider-active .owl-nav .owl-next {
+    position: initial;
+    background-color: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    line-height: 61px; }
+    .process-slider .process-slider-active .owl-nav .owl-prev i, .process-slider .process-slider-active .owl-nav .owl-next i {
+      transition: all 0.3s linear; }
+    .process-slider .process-slider-active .owl-nav .owl-prev:hover, .process-slider .process-slider-active .owl-nav .owl-next:hover {
+      background-color: var(--cyan) !important; }
+      .process-slider .process-slider-active .owl-nav .owl-prev:hover i, .process-slider .process-slider-active .owl-nav .owl-next:hover i {
+        color: #374957; }
+.process-slider #process2 .owl-item {
+  opacity: 1 !important; }
+.process-slider #process2 .owl-nav button {
+  border: 1px solid rgba(0, 36, 72, 0.1); }
+  .process-slider #process2 .owl-nav button i {
+    color: #374957; }
+  .process-slider #process2 .owl-nav button:hover i {
+    color: #fff; }
+
+/*-- process-slider end ---*/
+/*-- execution ---*/
+.abschluss {
+  background-image: url(../img/abs-shape.png), url(../img/abs-shape.png);
+  background-repeat: no-repeat;
+  background-position: 7% 70%, 93% 20%; }
+  .abschluss .imageSlider .carousel-item {
+    max-height: 330px; }
+  .abschluss .imageSlider .carousel-indicators {
+    bottom: -50px; }
+    .abschluss .imageSlider .carousel-indicators button {
+      width: 8px;
+      height: 8px;
+      margin: 0 8px;
+      background-color: #D2DBE2;
+      border-radius: 50%; }
+      .abschluss .imageSlider .carousel-indicators button.active {
+        background-color: var(--flourescent_blue); }
+
+.user-flow {
+  min-height: 710px; }
+
+.user-flow-image {
+  margin-top: -362px; }
+
+.user-flow-img {
+  background: #FFFFFF;
+  box-shadow: 15px 30px 60px rgba(0, 36, 72, 0.1); }
+
+/*-- execution end ---*/
+/*-- Afzal bhai style -/End ---*/
 
 /*# sourceMappingURL=style.css.map */
