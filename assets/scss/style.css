@@ -714,8 +714,8 @@ body {
 
 /*-- Common Button Style - Start ---*/
 .fill-btn {
-  padding: 15px 35px;
-  border: 1px solid var(--flourescent_blue);
+  padding: 16px 36px;
+  border: 0px solid var(--flourescent_blue);
   transition: all 0.2s ease-in-out;
   margin: 0 2px; }
   .fill-btn.resource-filter-btn:hover {
@@ -724,6 +724,55 @@ body {
     color: var(--gray_1);
     background: #21fff6;
     border-color: #21fff6; }
+
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: 4px; }
+
+.hvr-sweep-to-right::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #11e4dd;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  border-radius: 4px; }
+
+.hvr-sweep-to-right:hover:hover, .hvr-sweep-to-right:hover:focus, .hvr-sweep-to-right:hover:active {
+  color: var(--gray_1); }
+
+.hvr-sweep-to-right:hover::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
+.hvr-sweep-to-right:focus::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
+.hvr-sweep-to-right:active::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
 
 .minimal-btn {
   padding: 15px 35px;
@@ -758,27 +807,6 @@ body {
 /*-- Common Button Style - End ---*/
 /* css for banner - END*/
 /* Foysal vai css Home page - start*/
-/*-- Common Button Style - Start ---*/
-.fill-btn {
-  padding: 15px 35px;
-  border: 1px solid var(--flourescent_blue);
-  transition: all 0.2s ease-in-out;
-  margin: 0 2px; }
-  .fill-btn:hover {
-    color: var(--gray_1);
-    background: #21fff6;
-    border-color: #21fff6; }
-
-.minimal-btn {
-  padding: 15px 35px;
-  border: 1px solid var(--gray_5);
-  transition: all 0.2s ease-in-out;
-  margin: 0 2px; }
-  .minimal-btn:hover {
-    color: var(--gray_1);
-    background: var(--flourescent_blue);
-    border-color: var(--flourescent_blue); }
-
 /*-- Common Button Style - End ---*/
 .features {
   background: linear-gradient(180deg, rgba(232, 243, 255, 0.5) 0.88%, #e8f3ff 100.88%);
@@ -950,11 +978,13 @@ body {
       background: var(--gray_1);
       border: 1px solid rgba(255, 255, 255, 0.2);
       padding: 17px 20px;
-      max-width: 620px; }
+      max-width: 620px;
+      transition: all 0.2s ease-in-out; }
       .footer-area .footer-top .subscribe-field::placeholder {
         color: #8ba0b6; }
       .footer-area .footer-top .subscribe-field:focus {
-        outline: none; }
+        outline: none;
+        border-color: var(--cyan); }
     .footer-area .footer-top .subscribe-box {
       max-width: 632px;
       margin: 0 auto; }
@@ -1000,11 +1030,14 @@ body {
   padding: 15px 16px 15px 20px;
   min-width: 191px;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.025) 100%);
-  border: 1px solid rgba(0, 186, 235, 0.12); }
+  border: 1px solid rgba(0, 186, 235, 0.12);
+  transition: all 0.2s ease-in-out; }
   .footer-common-btn a svg * {
     transition: all 0.2s ease-in-out; }
-  .footer-common-btn a:hover svg * {
-    fill: var(--cyan); }
+  .footer-common-btn a:hover {
+    border-color: var(--cyan); }
+    .footer-common-btn a:hover svg * {
+      fill: var(--cyan); }
 
 #back-to-top {
   position: fixed;
@@ -1088,8 +1121,8 @@ body {
           fill: #00baeb; }
 
 .filterable-portfolio .filter-nav {
-  gap: 12px;
-  max-width: 700px;
+  gap: 5px;
+  max-width: 980px;
   margin: 0 auto;
   border-bottom: 1px solid var(--gray_5);
   padding-bottom: 15px;
@@ -1099,7 +1132,7 @@ body {
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    padding: 11px 28px;
+    padding: 11px 18px;
     cursor: pointer;
     transition: linear 0.3s; }
     .filterable-portfolio .filter-nav .filter-nav-item:hover {
@@ -1112,7 +1145,7 @@ body {
       color: var(--gray_1); }
 .filterable-portfolio .filterable-item-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px; }
   .filterable-portfolio .filterable-item-wrapper .filterable-item {
     position: relative;
@@ -1154,16 +1187,48 @@ body {
         .filterable-portfolio .filterable-item-wrapper .filterable-item .card-footer .filterable-item-btn:hover {
           background-color: #00f5eb; }
 
+.filterable-portfolio-item {
+  box-shadow: 7.57143px 22.7143px 90.8571px rgba(0, 36, 72, 0.05); }
+
+.portfolio-category a {
+  padding: 4px 14px; }
+
+.heading-wrapping {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical; }
+
+.paragraph-wrapping {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical; }
+
+.portfolio-item-btn:hover {
+  color: var(--gray_1); }
+  .portfolio-item-btn:hover svg * {
+    fill: var(--gray_1); }
+  .portfolio-item-btn:hover .arrow-r-icon {
+    margin-left: 5px; }
+
 .brand .brand-wrapper {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   justify-content: center;
   align-items: center; }
   .brand .brand-wrapper .brand-logo {
-    overflow: hidden; }
+    overflow: hidden;
+    display: grid;
+    align-items: center;
+    justify-content: center; }
     .brand .brand-wrapper .brand-logo img {
-      transition: ease-in-out 0.5s; }
+      transition: ease-in-out 0.3s; }
     .brand .brand-wrapper .brand-logo:hover img {
       transform: scale(0.9); }
 
