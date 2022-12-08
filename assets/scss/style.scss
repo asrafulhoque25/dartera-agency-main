@@ -366,8 +366,8 @@ body {
     line-height: 54px;
 
     @media (max-width: 1200px) {
-        font-size: 42px;
-        line-height: 54px;
+        font-size: 40px;
+        line-height: 52px;
     }
     @media (max-width: 776px) {
         font-size: 35px;
@@ -837,37 +837,6 @@ body {
     animation-name: animation;
     animation-duration: 8s;
     //   animation-iteration-count: infinite;
-}
-@keyframes animation {
-    0% {
-        left: -500px;
-        top: 400px;
-    }
-
-    //   50% {left: 100px;top:100px;}
-    // //   75% {left: 200px;top:50px;}
-
-    //     0% {
-    //     left: 5px;
-    //     top: 5px;
-    // }
-    25% {
-        left: 10px;
-        top: 10px;
-    }
-    50% {
-        left: 0px;
-        top: 0px;
-    }
-
-    75% {
-        left: 15px;
-        top: 15px;
-    }
-    100% {
-        left: 0;
-        top: 0;
-    }
 }
 
 .contact-toggle {
@@ -2216,11 +2185,7 @@ body {
     counter-reset: so-counter;
 }
 
-.so-quality-list {
-    &:last-child {
-        border-bottom: 1px solid #b8c5d4;
-    }
-}
+
 .so-quality-title {
     padding: 15px 0;
     &::before {

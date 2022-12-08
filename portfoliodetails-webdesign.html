@@ -55,321 +55,311 @@
 <body>
     <!-- Main Coding Start Here -->
 
-    <!-- header -/Start -->
-    <header id="header">
-        <!-- navbar -/Start -->
-        <div class="header">
-            <div class="container-fluid p-0">
-                <nav class="menu-area navbar py-0 navbar-expand-xxl py-2">
-                    <div class="container-fluid">
-                        <a href="index.html" class="navbar-brand theme-logo">
-                            <img src="assets/img/logo.svg" alt="logo" class="img-fluid">
-                        </a>
+<!-- header -/Start -->
+<header id="header" class="position-absolute top-0 start-0 end-0 w-100">
+    <!-- navbar -/Start -->
+    <div class="header">
+        <div class="container-fluid p-0">
+            <nav class="menu-area navbar py-0 navbar-expand-xxl py-2">
+                <div class="container-fluid">
+                    <a href="index.html" class="navbar-brand theme-logo">
+                        <img src="assets/img/logo.svg" alt="logo" class="img-fluid">
+                    </a>
 
-                        <div class="d-xxl-none d-flex align-items-center gap-4 contactInfo px-4">
-                            <a href="+41315520083" class=" text-decoration-none phone text-white fs-5">
-                                <span><img src="assets/img/call.svg" class="img-fluid" alt="call"></span>
-                                +41 31 552 00 83
+                    <div class="d-xxl-none d-flex align-items-center ms-auto gap-sm-3 gap-2 contactInfo px-0 me-2">
+                        <div class="nav-item dropdown language pe-2">
+                            <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-0 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <!-- Deutsch -->
+                                <img src="assets/img/language.png" class="img-fluid language-icon" alt="">
                             </a>
-                            <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
-                                Termin vereinbaren
-                            </button>
-                        </div>
-
-
-                        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#nav-toggle" aria-controls="nav-toggle" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span><img src="assets/img/menu.png" class="img-fluid" alt=""></span>
-                        </button>
-
-
-
-                        <div class="collapse navbar-collapse" id="nav-toggle">
-                            <ul class="menu navbar-nav mx-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active py-4 px-0 mx-3 active fs-14 fw-bold text-uppercase"
-                                        aria-current="page" href="index.html">Startseite</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
-                                        href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Leistungen
+                            <ul class="dropdown-menu dropdown-menu-end fade-down all-language ">
+                                <li>
+                                    <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                        English
                                     </a>
-                                    <div
-                                        class="dropdown-menu mega-menu dropdown-menu-end fade-down bg-white box-shadow radius-8">
-                                        <div class="dropdown-shape">
-                                            <img src="assets/img/dropdown-shape.png " class="img-fluid" alt="">
-                                        </div>
-                                        <div class="row gx-2">
-                                            <div class="col-xl-6">
-                                                <a href="#"
-                                                    class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
-                                                    <div class="sidebar-left d-flex align-items-center gap-3">
-                                                        <img src="assets/img/dropdown-logo1.png"
-                                                            class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
-                                                            alt="sidebarlogo">
-                                                        <div>
-                                                            <h5 class="fs-6 fw-bold text-indigo_dye">Webdesign</h5>
-                                                            <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">
-                                                                Unvergessliche User Experience bieten</p>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10"
-                                                            viewBox="0 0 11 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
-                                                                fill="white" />
-                                                        </svg>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <a href="#"
-                                                    class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
-                                                    <div class="sidebar-left d-flex align-items-center gap-3">
-                                                        <img src="assets/img/dropdown-logo6.png"
-                                                            class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
-                                                            alt="sidebarlogo">
-                                                        <div>
-                                                            <h5 class="fs-6 fw-bold text-indigo_dye">Maintenance</h5>
-                                                            <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">Unterhalt,
-                                                                damit Ihre Website läuft</p>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10"
-                                                            viewBox="0 0 11 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
-                                                                fill="white" />
-                                                        </svg>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <a href="#"
-                                                    class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
-                                                    <div class="sidebar-left d-flex align-items-center gap-3">
-                                                        <img src="assets/img/dropdown-logo2.png"
-                                                            class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
-                                                            alt="sidebarlogo">
-                                                        <div>
-                                                            <h5 class="fs-6 fw-bold text-indigo_dye">SEO</h5>
-                                                            <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">Mit
-                                                                Relevanz gefunden werden</p>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10"
-                                                            viewBox="0 0 11 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
-                                                                fill="white" />
-                                                        </svg>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <a href="#"
-                                                    class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
-                                                    <div class="sidebar-left d-flex align-items-center gap-3">
-                                                        <img src="assets/img/dropdown-logo7.png"
-                                                            class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
-                                                            alt="sidebarlogo">
-                                                        <div>
-                                                            <h5 class="fs-6 fw-bold text-indigo_dye">SEA</h5>
-                                                            <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">Google Ads
-                                                                Werbung für sofortige Wirkung</p>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10"
-                                                            viewBox="0 0 11 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
-                                                                fill="white" />
-                                                        </svg>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <a href="#"
-                                                    class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
-                                                    <div class="sidebar-left d-flex align-items-center gap-3">
-                                                        <img src="assets/img/dropdown-logo3.png"
-                                                            class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
-                                                            alt="sidebarlogo">
-                                                        <div>
-                                                            <h5 class="fs-6 fw-bold text-indigo_dye">Content</h5>
-                                                            <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">
-                                                                SEO-Content, der verkauft</p>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10"
-                                                            viewBox="0 0 11 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
-                                                                fill="white" />
-                                                        </svg>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <a href="#"
-                                                    class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
-                                                    <div class="sidebar-left d-flex align-items-center gap-3">
-                                                        <img src="assets/img/dropdown-logo8.png"
-                                                            class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
-                                                            alt="sidebarlogo">
-                                                        <div>
-                                                            <h5 class="fs-6 fw-bold text-indigo_dye">Branding</h5>
-                                                            <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">
-                                                                Wiedererkennungswert für Ihre Firma</p>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10"
-                                                            viewBox="0 0 11 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
-                                                                fill="white" />
-                                                        </svg>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <a href="#"
-                                                    class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
-                                                    <div class="sidebar-left d-flex align-items-center gap-3">
-                                                        <img src="assets/img/dropdown-logo4.png"
-                                                            class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
-                                                            alt="sidebarlogo">
-                                                        <div>
-                                                            <h5 class="fs-6 fw-bold text-indigo_dye">Animations</h5>
-                                                            <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">Wir
-                                                                bringen Bewegung auf Ihre Website</p>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10"
-                                                            viewBox="0 0 11 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
-                                                                fill="white" />
-                                                        </svg>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
-                                        href="referenzen.html">Referenzen</a>
+                                <li>
+                                    <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                        Hindi
+                                    </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
-                                        href="#">Über
-                                        uns</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
-                                        href="#">Kontakt</a>
+                                <li>
+                                    <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                        Bangla
+                                    </a>
                                 </li>
                             </ul>
+                        </div>
+                        <a href="tel:+41315520083" class=" text-decoration-none phone text-white fs-5">
+                            <span><img src="assets/img/call.svg" class="img-fluid" alt="call"></span>
+                        </a>
+                        <a href="#" class=" text-decoration-none phone text-white fs-5">
+                            <span><img src="assets/img/appointment.png" class="img-fluid appointment"
+                                    alt="appointment"></span>
+                        </a>
+                        <!-- <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
+                                Termin vereinbaren
+                            </button> -->
+                    </div>
 
 
-                            <div class="nav-right d-flex align-items-center">
-                                <div class="nav-item dropdown language pe-2">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
-                                        href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        German
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-end fade-down">
-                                        <li>
-                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
-                                                href="#">
-                                                Action
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#nav-toggle" aria-controls="nav-toggle" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span><img src="assets/img/menu.png" class="img-fluid" alt=""></span>
+                    </button>
+
+
+
+                    <div class="collapse navbar-collapse" id="nav-toggle">
+                        <ul class="menu navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active py-xxl-4 py-2 px-0 mx-3 active fs-14 fw-bold text-uppercase"
+                                    aria-current="page" href="index.html">Startseite</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Leistungen
+                                </a>
+                                <div
+                                    class="dropdown-menu mega-menu dropdown-menu-end fade-down bg-white box-shadow radius-8">
+                                    <div class="dropdown-shape">
+                                        <img src="assets/img/dropdown-shape.png " class="img-fluid" alt="">
+                                    </div>
+                                    <div class="row gx-2">
+                                        <div class="col-xl-6">
+                                            <a href="#"
+                                                class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
+                                                <div class="sidebar-left d-flex align-items-center gap-3">
+                                                    <img src="assets/img/dropdown-logo1.png"
+                                                        class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
+                                                        alt="sidebar logo">
+                                                    <div>
+                                                        <h5 class="fs-6 fw-bold text-indigo_dye">Webdesign</h5>
+                                                        <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">
+                                                            Unvergessliche User Experience bieten</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="">
+                                                    <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </div>
                                             </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
-                                                href="#">
-                                                Another action
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <a href="#"
+                                                class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
+                                                <div class="sidebar-left d-flex align-items-center gap-3">
+                                                    <img src="assets/img/dropdown-logo6.png"
+                                                        class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
+                                                        alt="sidebarlogo">
+                                                    <div>
+                                                        <h5 class="fs-6 fw-bold text-indigo_dye">Maintenance</h5>
+                                                        <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">Unterhalt,
+                                                            damit Ihre Website läuft</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="">
+                                                    <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </div>
                                             </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
-                                                href="#">
-                                                Something else here
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <a href="#"
+                                                class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
+                                                <div class="sidebar-left d-flex align-items-center gap-3">
+                                                    <img src="assets/img/dropdown-logo2.png"
+                                                        class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
+                                                        alt="sidebarlogo">
+                                                    <div>
+                                                        <h5 class="fs-6 fw-bold text-indigo_dye">SEO</h5>
+                                                        <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">Mit
+                                                            Relevanz gefunden werden</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="">
+                                                    <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </div>
                                             </a>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <a href="#"
+                                                class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
+                                                <div class="sidebar-left d-flex align-items-center gap-3">
+                                                    <img src="assets/img/dropdown-logo7.png"
+                                                        class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
+                                                        alt="sidebarlogo">
+                                                    <div>
+                                                        <h5 class="fs-6 fw-bold text-indigo_dye">SEA</h5>
+                                                        <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">Google Ads
+                                                            Werbung für sofortige Wirkung</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="">
+                                                    <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <a href="#"
+                                                class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
+                                                <div class="sidebar-left d-flex align-items-center gap-3">
+                                                    <img src="assets/img/dropdown-logo3.png"
+                                                        class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
+                                                        alt="sidebarlogo">
+                                                    <div>
+                                                        <h5 class="fs-6 fw-bold text-indigo_dye">Content</h5>
+                                                        <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">
+                                                            SEO-Content, der verkauft</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="">
+                                                    <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <a href="#"
+                                                class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
+                                                <div class="sidebar-left d-flex align-items-center gap-3">
+                                                    <img src="assets/img/dropdown-logo8.png"
+                                                        class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
+                                                        alt="sidebarlogo">
+                                                    <div>
+                                                        <h5 class="fs-6 fw-bold text-indigo_dye">Branding</h5>
+                                                        <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">
+                                                            Wiedererkennungswert für Ihre Firma</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="">
+                                                    <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <a href="#"
+                                                class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
+                                                <div class="sidebar-left d-flex align-items-center gap-3">
+                                                    <img src="assets/img/dropdown-logo4.png"
+                                                        class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
+                                                        alt="sidebarlogo">
+                                                    <div>
+                                                        <h5 class="fs-6 fw-bold text-indigo_dye">Animations</h5>
+                                                        <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">Wir
+                                                            bringen Bewegung auf Ihre Website</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="">
+                                                    <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="d-xxl-flex d-none align-items-center gap-4 contactInfo px-4">
-                                    <a href="+41315520083" class=" text-decoration-none phone text-white fs-5">
-                                        <span><img src="assets/img/call.svg" class="img-fluid" alt="call"></span>
-                                        +41 31 552 00 83
-                                    </a>
-                                    <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
-                                        Termin vereinbaren
-                                    </button>
-                                </div>
-                                <div class="sidebar">
-                                    <!-- <img src="assets/img/humbarger.svg" class="img-fluid" alt="sidebar"> -->
-
-                                    <!-- <svg width="24" height="18" viewBox="0 0 24 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="12" width="12" height="2" fill="#00BAEB" />
-                                            <rect x="12" y="16" width="12" height="2" fill="#00BAEB" />
-                                            <rect x="0" y="8" width="24" height="2" fill="#00BAEB" />
-                                        </svg> -->
-
-                                    <svg class="sidebarToggle d-block" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="12" y="3" width="24" height="2" fill="#00BAEB" />
-                                        <rect x="12" y="19" width="24" height="2" fill="#00BAEB" />
-                                        <rect x="0" y="11" width="24" height="2" fill="#00BAEB" />
-                                    </svg>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                    href="referenzen.html">Referenzen</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                    href="#">Über
+                                    uns</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                    href="#">Kontakt</a>
+                            </li>
+                        </ul>
 
 
-
-                                    <svg class="sidebarClose d-none" width="22" height="20" viewBox="0 0 22 20"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="0.804688" y="17.7783" width="24" height="2"
-                                            transform="rotate(-45 0.804688 17.7783)" fill="#00BAEB" />
-                                        <rect x="2.21875" y="0.807617" width="24" height="2"
-                                            transform="rotate(45 2.21875 0.807617)" fill="#00BAEB" />
-                                    </svg>
-
-
-                                </div>
+                        <div class="nav-right d-flex align-items-center">
+                            <div class="nav-item dropdown language pe-2 d-xxl-block d-none">
+                                <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Deutsch
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end fade-down all-language ">
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            English
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            Hindi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            Bangla
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
+                            <div class="d-xxl-flex d-none align-items-center gap-4 contactInfo px-4">
+                                <a href="+41315520083" class=" text-decoration-none phone text-white fs-5">
+                                    <span><img src="assets/img/call.svg" class="img-fluid" alt="call"></span>
+                                    +41 31 552 00 83
+                                </a>
+                                <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
+                                    Termin vereinbaren
+                                </button>
+                            </div>
+
                         </div>
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </div>
-        <!-- navbar -/End -->
-    </header>
-    <!--/ header -/End -->
+    </div>
+    <!-- navbar -/End -->
+</header>
+<!--/ header -/End -->
+
 
 
 
@@ -1000,18 +990,24 @@
                             Newsletter
                         </h4>
                         <p class="mb-0 text-dark_6">
-                            Abonnieren Sie unseren Newsletter, um die neuesten <br class="d-none d-lg-block"> Nachrichten und Updates zu erhalten.
+                            Abonnieren Sie unseren Newsletter, um die neuesten <br class="d-none d-lg-block">
+                            Nachrichten und Updates zu erhalten.
                         </p>
-
+    
                         <div class="subscribe-box mt-3 position-relative">
-                            <input class="subscribe-field radius-12 w-100 text-white " type="email" name="subscribe-mail" id="" placeholder="Geben Sie hier Ihre E-Mail ein">
+                            <input class="subscribe-field radius-12 w-100 text-white " type="email" name="subscribe-mail"
+                                id="" placeholder="Geben Sie hier Ihre E-Mail ein">
                             <div class="subscribe-btn">
-                                <a href="#" class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
+                                <a href="#"
+                                    class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
                                     <span>Anmelden</span>
                                     <span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.842238 3.8902C0.646913 3.94601 0.469545 4.05186 0.327685 4.19726C0.185826 4.34267 0.0843913 4.52259 0.0334185 4.71923C-0.0175542 4.91588 -0.0162984 5.12242 0.0370618 5.31843C0.090422 5.51444 0.194037 5.69311 0.337654 5.83678L2.32799 7.82478V11.6666H6.1739L8.17765 13.6674C8.2852 13.7759 8.41313 13.8621 8.55408 13.9209C8.69504 13.9798 8.84624 14.0102 8.99899 14.0104C9.09938 14.0102 9.19935 13.9973 9.29649 13.9719C9.49305 13.9224 9.6731 13.822 9.81851 13.6808C9.96393 13.5396 10.0696 13.3626 10.1248 13.1675L13.9947 0.012207L0.842238 3.8902ZM1.16657 5.01195L11.0996 2.08362L3.49582 9.67511V7.34178L1.16657 5.01195ZM9.00657 12.8426L6.65749 10.4999H4.32415L11.9267 2.90379L9.00657 12.8426Z" fill="#002448"/>
-                                            </svg>                                            
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.842238 3.8902C0.646913 3.94601 0.469545 4.05186 0.327685 4.19726C0.185826 4.34267 0.0843913 4.52259 0.0334185 4.71923C-0.0175542 4.91588 -0.0162984 5.12242 0.0370618 5.31843C0.090422 5.51444 0.194037 5.69311 0.337654 5.83678L2.32799 7.82478V11.6666H6.1739L8.17765 13.6674C8.2852 13.7759 8.41313 13.8621 8.55408 13.9209C8.69504 13.9798 8.84624 14.0102 8.99899 14.0104C9.09938 14.0102 9.19935 13.9973 9.29649 13.9719C9.49305 13.9224 9.6731 13.822 9.81851 13.6808C9.96393 13.5396 10.0696 13.3626 10.1248 13.1675L13.9947 0.012207L0.842238 3.8902ZM1.16657 5.01195L11.0996 2.08362L3.49582 9.67511V7.34178L1.16657 5.01195ZM9.00657 12.8426L6.65749 10.4999H4.32415L11.9267 2.90379L9.00657 12.8426Z"
+                                                fill="#002448" />
+                                        </svg>
                                     </span>
                                 </a>
                             </div>
@@ -1020,19 +1016,19 @@
                 </div>
             </div>
             <!-- Fooetr top -/End -->
-
+    
             <!-- Fooetr Main -/Start -->
             <div class="footer-main">
                 <div class="row">
-                    
-                    <div class="col-sm-6 col-lg-3">
+    
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
-                            
+    
                             <a href="index.html" class="site-logo mb-30 d-inline-block">
                                 <img src="assets/img/footer-logo.svg" alt="">
                             </a>
-                            
-                            <ul class="widget-list list-unstyled m-0 d-flex flex-wrap gap-4">
+    
+                            <ul class="widget-list list-unstyled m-0 d-flex flex-wrap gap-lg-4 gap-3 ">
                                 <li class="widget-list-item pb-0">
                                     <a href="#" class="text-decoration-none text-white fs-6 d-flex align-items-center">
                                         <span class="pe-2 me-1 ">
@@ -1066,11 +1062,10 @@
                             </ul>
                         </div>
                     </div>
-
-                    <div class="col-sm-6 col-lg-3">
+    
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
-                            <h6
-                                class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
+                            <h6 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
                                 Unterhalten wir uns
                             </h6>
                             <ul class="widget-list list-unstyled m-0">
@@ -1090,7 +1085,7 @@
                                         </span>
                                     </a>
                                 </li>
-
+    
                                 <li class="widget-list-item pb-0">
                                     <a href="mailto:hey@dartera.ch"
                                         class="text-decoration-none text-white fs-5 d-flex align-items-center">
@@ -1110,11 +1105,10 @@
                             </ul>
                         </div>
                     </div>
-
-                    <div class="col-sm-6 col-lg-3">
+    
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
-                            <h6
-                                class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
+                            <h6 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
                                 Anschrift
                             </h6>
                             <ul class="widget-list list-unstyled m-0">
@@ -1126,11 +1120,10 @@
                             </ul>
                         </div>
                     </div>
-
-                    <div class="col-sm-6 col-lg-3">
+    
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
-                            <h6
-                                class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
+                            <h6 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
                                 Rechtliches
                             </h6>
                             <ul class="widget-list list-unstyled m-0">
@@ -1162,25 +1155,26 @@
                                         </span>
                                     </a>
                                 </li>
-
+    
                             </ul>
                         </div>
                     </div>
-
+    
                 </div>
             </div>
             <!-- Fooetr Main -/End -->
-
+    
             <div class="footer-bottom">
                 <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <div class="col text-white fw-medium">
+                    <div class="col-12 col-xl-5 text-xl-start text-center">
+                        <div class="text-white fw-medium">
                             © 2022 Dartera GmbH
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="footer-button-wrapper d-flex align-items-center justify-content-end gap-4">
-
+                    <div class="col-12 col-xl-7 text-xl-end text-center">
+                        <div
+                            class="footer-button-wrapper d-flex flex-wrap align-items-center justify-content-xl-end justify-content-center mt-xl-0 mt-4 gap-4">
+    
                             <div class="footer-common-btn">
                                 <a href="#"
                                     class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
@@ -1197,7 +1191,7 @@
                                     </span>
                                 </a>
                             </div>
-
+    
                             <div class="footer-common-btn">
                                 <a href="#"
                                     class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
@@ -1214,7 +1208,7 @@
                                     </span>
                                 </a>
                             </div>
-
+    
                             <div class="footer-common-btn">
                                 <a href="#"
                                     class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
@@ -1231,18 +1225,17 @@
                                     </span>
                                 </a>
                             </div>
-
+    
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <button type="button" class="border-0 rounded-pill" id="btn-back-to-top">
+        <button type="button" class="border-0 rounded-pill" id="back-to-top">
             <img src="assets/img/back-to-top-icon.svg" alt="Back To Top" class="img-fluid">
         </button>
     </footer>
     <!-- Footer section -/End -->
-
 
     <!-- sidebar1 -->
     <div class="nav-sidebar">
