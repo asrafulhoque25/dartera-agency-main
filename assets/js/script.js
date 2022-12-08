@@ -18,10 +18,10 @@
 $(window).on('load', function () {
 
     // code should be execute here
-    $(function () {
-        $("#header").load("header.html");
-        $("#footer").load("footer.html");
-    });
+    // $(function () {
+    //     $("#header").load("header.html");
+    //     $("#footer").load("footer.html");
+    // });
 
 });
 
