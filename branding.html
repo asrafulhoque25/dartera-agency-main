@@ -56,7 +56,7 @@
     <!-- Main Coding Start Here -->
 
     <!-- header -/Start -->
-    <header id="header">
+    <header id="header" class="position-absolute top-0 start-0 end-0 w-100">
         <!-- navbar -/Start -->
         <div class="header">
             <div class="container-fluid p-0">
@@ -66,14 +66,41 @@
                             <img src="assets/img/logo.svg" alt="logo" class="img-fluid">
                         </a>
     
-                        <div class="d-xxl-none d-flex align-items-center gap-4 contactInfo px-4">
-                            <a href="+41315520083" class=" text-decoration-none phone text-white fs-5">
+                        <div class="d-xxl-none d-flex align-items-center ms-auto gap-sm-3 gap-2 contactInfo px-0 me-2">
+                            <div class="nav-item dropdown language pe-2">
+                                <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-0 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <!-- Deutsch -->
+                                    <img src="assets/img/language.png" class="img-fluid language-icon" alt="">
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end fade-down all-language ">
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            English
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            Hindi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            Bangla
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="tel:+41315520083" class=" text-decoration-none phone text-white fs-5">
                                 <span><img src="assets/img/call.svg" class="img-fluid" alt="call"></span>
-                                +41 31 552 00 83
                             </a>
-                            <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
-                                Termin vereinbaren
-                            </button>
+                            <a href="#" class=" text-decoration-none phone text-white fs-5">
+                                <span><img src="assets/img/appointment.png" class="img-fluid appointment"
+                                        alt="appointment"></span>
+                            </a>
+                            <!-- <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
+                                    Termin vereinbaren
+                                </button> -->
                         </div>
     
     
@@ -88,11 +115,11 @@
                         <div class="collapse navbar-collapse" id="nav-toggle">
                             <ul class="menu navbar-nav mx-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active py-4 px-0 mx-3 active fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link active py-xxl-4 py-2 px-0 mx-3 active fs-14 fw-bold text-uppercase"
                                         aria-current="page" href="index.html">Startseite</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
                                         href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Leistungen
                                     </a>
@@ -108,7 +135,7 @@
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo1.png"
                                                             class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
-                                                            alt="sidebarlogo">
+                                                            alt="sidebar logo">
                                                         <div>
                                                             <h5 class="fs-6 fw-bold text-indigo_dye">Webdesign</h5>
                                                             <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">
@@ -274,41 +301,41 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
                                         href="referenzen.html">Referenzen</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
                                         href="#">Über
                                         uns</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
                                         href="#">Kontakt</a>
                                 </li>
                             </ul>
     
     
                             <div class="nav-right d-flex align-items-center">
-                                <div class="nav-item dropdown language pe-2">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                <div class="nav-item dropdown language pe-2 d-xxl-block d-none">
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
                                         href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        German
+                                        Deutsch
                                     </a>
-                                    <ul class="dropdown-menu dropdown-menu-end fade-down">
+                                    <ul class="dropdown-menu dropdown-menu-end fade-down all-language ">
                                         <li>
                                             <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
-                                                Action
+                                                English
                                             </a>
                                         </li>
                                         <li>
                                             <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
-                                                Another action
+                                                Hindi
                                             </a>
                                         </li>
                                         <li>
                                             <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
-                                                Something else here
+                                                Bangla
                                             </a>
                                         </li>
                                     </ul>
@@ -322,32 +349,7 @@
                                         Termin vereinbaren
                                     </button>
                                 </div>
-                                <div class="sidebar">
-                                    <!-- <img src="assets/img/humbarger.svg" class="img-fluid" alt="sidebar"> -->
     
-                                    <!-- <svg width="24" height="18" viewBox="0 0 24 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="12" width="12" height="2" fill="#00BAEB" />
-                                            <rect x="12" y="16" width="12" height="2" fill="#00BAEB" />
-                                            <rect x="0" y="8" width="24" height="2" fill="#00BAEB" />
-                                        </svg> -->
-    
-                            <svg class="sidebarToggle d-block" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect x="12" y="3" width="24" height="2" fill="#00BAEB" />
-                                <rect x="12" y="19" width="24" height="2" fill="#00BAEB" />
-                                <rect x="0" y="11" width="24" height="2" fill="#00BAEB" />
-                            </svg>
-                            
-                            
-                            
-                            <svg class="sidebarClose d-none" width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.804688" y="17.7783" width="24" height="2" transform="rotate(-45 0.804688 17.7783)" fill="#00BAEB" />
-                                <rect x="2.21875" y="0.807617" width="24" height="2" transform="rotate(45 2.21875 0.807617)" fill="#00BAEB" />
-                            </svg>
-    
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -358,234 +360,6 @@
     </header>
     <!--/ header -/End -->
     
-    
-    <!-- Dropdown -/start -->
-    <div class="nav-dropdown py-5">
-        <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="footer-common-btn mb-4">
-                    <a href="#"
-                        class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                        <span class="fw-bold ">
-                            Blog
-                        </span>
-                        <span>
-                            <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                    fill="#385470" />
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Startseite</span>
-    
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Referenzen</span>
-    
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Über uns</span>
-    
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Kontakt</span>
-                    </a>
-                </div>
-    
-            </div>
-    
-    
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="footer-common-btn mb-4">
-                    <a href="#"
-                        class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                        <span class="fw-bold ">
-                            Ressourcen
-                        </span>
-                        <span>
-                            <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                    fill="#385470" />
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown1.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Webdesign</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-    
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown2.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Webdesign</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-    
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown3.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Content</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-    
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between mb-3">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown4.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Animations</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-    
-                    </a>
-                </div>
-            </div>
-    
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="footer-common-btn mb-4">
-                    <a href="#"
-                        class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                        <span class="fw-bold ">
-                            Preis-Rechner
-                        </span>
-                        <span>
-                            <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                    fill="#385470" />
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown5.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Maintenance</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-    
-                    </a>
-                    <a href=""
-                        class="text-decoration-none  nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown6.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">SEA</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-    
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown7.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Branding</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-    
-                    </a>
-    
-                </div>
-            </div>
-    
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>
-                    <h3 class=" text-info-light fs-5 fw-bold">Weil gutes Marketing schon immer glücklich gemacht hat.
-                    </h3>
-                    <p class="text-info-light fs-14 pt-2">Buchen Sie jetzt einen kostenlosen Beratungstermin. Wir freuen
-                        uns auf das Gespräch.</p>
-                    <div class="common-btn pt-3 mt-3">
-                        <a href="#"
-                            class=" lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2 py-2 px-3 text-gray_1 fs-14 fw-semi-bold">
-                            <span>Buchen Sie Ihren Anruf</span>
-                            <span>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
-                                        fill="#002448" />
-                                </svg>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/ Dropdown -/End -->
 
     <!-- Banner -->
     <section class="subpage-page-banner2 research-banner d-flex align-items-center position-relative">
@@ -601,16 +375,17 @@
                 <div class="col-xl-6">
                     <div class="banner-left">
                         <div
-                            class="px-3 subpage-badge text-cyan fs-18 fw-semi-bold d-inline-flex align-items-center justify-content-center">
-                            <p class="mb-0">Branding</p>
+                            class="subpage-badge px-3 text-cyan fs-18 fw-semi-bold d-inline-flex gap-2 align-items-center justify-content-center">
+                            <img src="assets/img/branding-page-icon.svg" alt="settings icon" class="img-fluid">
+                            <p class="mb-0">
+                                Branding
+                            </p>
                         </div>
                         <h1 class="fs-48 fw-bold text-white mt-4">
                             Wir schaffen Brands und Erlebnisse durch tiefgreifende Zusammenarbeit
                         </h1>
                         <p class="fs-18 text-light_white mt-4 mb-5">
-                            Unkonventionelle Methoden, die uns tiefer in Ihr Brand und Sie weiter bringen. Alles in dem
-                            Bestreben, einen
-                            bemerkenswerten Wandel herbeizuführen. Branding mit Dartera.
+                            Unkonventionelle Methoden, die uns tiefer in Ihr Brand und Sie weiter bringen. Alles in dem Bestreben, einen bemerkenswerten Wandel herbeizuführen. <a href="#" class="text-flourescent_blue text-decoration-none text-hover">Branding mit Dartera.</a>
                         </p>
 
                         <!-- Common Buttons -/ Start -->
@@ -653,6 +428,114 @@
         </div>
     </section>
     <!--/ Banner -->
+
+
+
+    <!-- Features Section Started -->
+    <section class="features section-padding position-relative bg-white">
+        <div class="features-bg-shape-1 position-absolute">
+            <img src="assets/img/feature-bg-shape.svg" alt="Bg Shape" class="img-fluid">
+        </div>
+        <div class="features-bg-shape-2 position-absolute">
+            <img src="assets/img/feature-bg-shape.svg" alt="Bg Shape" class="img-fluid">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading text-center">
+                        <h6 class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block">
+                            Dienstleistungen
+                        </h6>
+                        <h2 class="fs-48 fw-bold text-gray_1 mt-2 mb-3">
+                            Damit Ihr Branding ankommt
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-4 mb-4">
+                    <div class="features-card h-100">
+                        <div class="mb-3"> <img class="img-fluid w-auto" src="assets/img/branding-icon-1.png" alt="sea-feat-img"> </div>
+                        <div class="text-area mt-1">
+                            <h3 class="fs-4 fw-bold text-gray_1 mb-3">Remarketing Ads</h3>
+                            <p class="text-gray_2 m-0"> Remarketing-Anzeigen werden anhand von Zielgruppenlisten erstellt, die auf der Grundlage früherer Besuche der Website oder anderer. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="features-card h-100">
+                        <div class="mb-3"> <img class="img-fluid w-auto" src="assets/img/branding-icon-2.png" alt="sea-feat-img"> </div>
+                        <div class="text-area mt-1">
+                            <h3 class="fs-4 fw-bold text-gray_1 mb-3">Paid Search (PPC)</h3>
+                            <p class="text-gray_2 m-0"> Generieren Sie mit unseren Google-Ads-Kampagnen in kürzester Zeit hochwertige Leads. Wir helfen Ihnen mit einer klaren Strategie. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="features-card h-100">
+                        <div class="mb-3"> <img class="img-fluid w-auto" src="assets/img/branding-icon-3.png" alt="sea-feat-img"> </div>
+                        <div class="text-area mt-1">
+                            <h3 class="fs-4 fw-bold text-gray_1 mb-3">Paid Search (PPC)</h3>
+                            <p class="text-gray_2 m-0"> Generieren Sie mit unseren Google-Ads-Kampagnen in kürzester Zeit hochwertige Leads. Wir helfen Ihnen mit einer klaren Strategie. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 mb-4">
+                    <div class="features-card h-100">
+                        <div class="mb-3"> <img class="img-fluid w-auto" src="assets/img/branding-icon-4.png" alt="sea-feat-img"> </div>
+                        <div class="text-area mt-1">
+                            <h3 class="fs-4 fw-bold text-gray_1 mb-3">Webdesign</h3>
+                            <p class="text-gray_2 m-0"> Google Tag Manager ist eine einfache Möglichkeit, Conversion-Tracking auf Ihrer Website zu implementieren. Unser Team kann Ihnen bei der Einrichtung des Codes helfen und ihn so konfigurieren, dass er nahtlos über mehrere Plattformen oder Geräte hinweg funktioniert. Nehmen Sie Kontakt mit uns auf, wenn Sie mehr über unsere Services zur Einrichtung von Conversion-Tracking erfahren möchten! </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="features-card h-100">
+                        <div class="mb-3"> <img class="img-fluid w-auto" src="assets/img/branding-icon-5.png" alt="sea-feat-img"> </div>
+                        <div class="text-area mt-1">
+                            <h3 class="fs-4 fw-bold text-gray_1 mb-3">Ads A/B Split Testing</h3>
+                            <p class="text-gray_2 m-0"> Mit A/B-Split-Tests können Sie zwei Varianten einer Kampagne testen. Auf diese Weise lässt sich feststellen, welche Variante die gewünschten Ergebnisse besser erzielt, und es können neue Strategien angewendet werden. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="features-card mb-30">
+                        <div class="mb-3"> <img class="img-fluid w-auto" src="assets/img/branding-icon-6.png" alt="sea-feat-img"> </div>
+                        <div class="text-area mt-1">
+                            <h3 class="fs-4 fw-bold text-gray_1 mb-3">Google Shopping Ads</h3>
+                            <p class="text-gray_2 m-0"> Google Shopping Ads sind eine hervorragende Möglichkeit, Ihre Produktdaten auf Google Properties und Partnerseiten anzuzeigen.</p>
+                        </div>
+                    </div>
+
+                    <div class="features-card">
+                        <div class="mb-3"> <img class="img-fluid w-auto" src="assets/img/branding-icon-7.png" alt="sea-feat-img"> </div>
+                        <div class="text-area mt-1">
+                            <h3 class="fs-4 fw-bold text-gray_1 mb-3">Google Shopping Ads</h3>
+                            <p class="text-gray_2 m-0"> Google Shopping Ads sind eine hervorragende Möglichkeit, Ihre Produktdaten auf Google Properties und Partnerseiten anzuzeigen. Diese Anzeigen können für den Verkauf von Produkten in einem Online-Shop verwendet werden. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 mb-4">
+                    <div class="features-card h-100">
+                        <div class="mb-3"> <img class="img-fluid w-auto" src="assets/img/branding-icon-8.png" alt="sea-feat-img"> </div>
+                        <div class="text-area mt-1">
+                            <h3 class="fs-4 fw-bold text-gray_1 mb-3">Landing Page Design</h3>
+                            <p class="text-gray_2 m-0"> Eine Landing Page, die einfach zu navigieren ist und alle Informationen bietet, kann Ihre Kunden überzeugen, Ihr Produkt oder Ihre Dienstleistung zu kaufen. Eine erstklassige Landing Page kann den entscheidenden Unterschied in Ihrer Konversionsrate ausmachen. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section End -->
+
 
     <!-- task Section -/Start -->
     <section class="task-section section-padding bg-gray_7">
@@ -881,6 +764,7 @@
     </section>
     <!-- aws-features end  -->
 
+    
     <!-- research feature start -->
     <section class="rearch-section section-padding bg-indigo_dye_light">
         <div class="container">

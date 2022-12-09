@@ -63,9 +63,6 @@ body {
     overflow-x: hidden;
     font-family: "Space Grotesk", sans-serif !important;
     transition: 0.8s ease-in-out;
-    // &.body-bg {
-    //     background-color: #002448;
-    // }
 }
 
 :root {
@@ -625,7 +622,7 @@ body {
     }
 
     &.change-nav-bg {
-        background-color: #002448 !important;
+        background-color: var(--gray_1) !important;
         transition: 0.8s ease-in-out;
     }
 
@@ -951,7 +948,7 @@ body {
     background-size: cover;
     overflow: hidden;
     transition: 0.6s all ease-in-out;
-    background-color: #002448;
+    background-color: var(--gray_1);
 
     &.banner-mt {
         border-radius: 24px 24px 0 0;
@@ -1070,7 +1067,7 @@ body {
 
 .minimal-btn {
     padding: 15px 35px;
-    border: 1px solid var(--flourescent_blue);
+    border: 1px solid var(--indigo_dye);
     transition: all 0.2s ease-in-out;
     margin: 0 2px;
 
@@ -1083,12 +1080,12 @@ body {
     }
 
     &:hover {
-        color: #002448;
+        color: var(--gray_1);
         background: var(--flourescent_blue);
         border-color: var(--flourescent_blue);
 
         svg * {
-            fill: #002448;
+            fill: var(--gray_1);
         }
     }
 }
@@ -1104,12 +1101,12 @@ body {
     }
 
     &:hover {
-        color: #002448;
+        color: var(--gray_1);
         background: var(--flourescent_blue);
         border-color: var(--flourescent_blue);
 
         svg * {
-            fill: #002448;
+            fill: var(--gray_1);
         }
     }
 }
@@ -1219,7 +1216,7 @@ body {
                 font-weight: 700;
                 font-size: 20px;
                 line-height: 26px;
-                color: #002448;
+                color: var(--gray_1);
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
@@ -1726,7 +1723,7 @@ body {
                     font-weight: 700;
                     font-size: 20px;
                     line-height: 26px;
-                    color: #002448;
+                    color: var(--gray_1);
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
@@ -3404,3 +3401,29 @@ body {
 /*-- sidebar style -End ---*/
 
 /*-- Afzal bhai style -/End ---*/
+
+
+
+/*-- Animation page slider -/Start ---*/
+.animation-slide-item {
+    border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    max-width: 540px;
+    min-height: 243px;
+    .animLogo-name {
+        left: 30px;
+        bottom: 25px;
+    }
+}
+
+
+
+.animation-slider-wrap {
+    animation: animated-slide 30s linear infinite;
+}
+
+@keyframes animated-slide {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-564px * 5))}
+}
+/*-- Animation page slider -/End ---*/
