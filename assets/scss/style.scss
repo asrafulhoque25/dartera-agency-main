@@ -99,7 +99,7 @@ body {
     --light_white: #b5d5f4;
     --blue-eyes: #acd5ff;
     --dark_6: #d8e2df;
-    --cornflower-blue: #B5D5F4;
+    --cornflower-blue: #b5d5f4;
 }
 
 /* reset, root - END */
@@ -566,13 +566,12 @@ body {
 
 .lh-26 {
     line-height: 26px;
-
 }
 
 .minus-mt-20 {
     margin-top: -20px;
 }
-.h-52{
+.h-52 {
     height: 52px;
 }
 
@@ -789,7 +788,6 @@ body {
             border-radius: 12px;
 
             .dropdown-item {
-
                 &:hover,
                 &:focus {
                     color: var(--cyan_light);
@@ -941,7 +939,7 @@ body {
 /* css for navigation - END*/
 
 /* css for banner - start*/
-.banner-wrapper{
+.banner-wrapper {
     position: relative;
     z-index: 555;
 }
@@ -1034,7 +1032,7 @@ body {
     text-decoration: none;
     cursor: pointer;
     border-style: solid;
-    transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     border: none;
     border-radius: 4px;
 
@@ -1049,7 +1047,26 @@ body {
         border-color: #21fff6;
     }
 }
-
+.fill-btn {
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        background: rgba(0, 0, 0, 0.05);
+        z-index: 1;
+        transition: width 0.3s ease-in-out;
+    }
+}
+.fill-btn {
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+}
 
 .minimal-btn {
     padding: 15px 35px;
@@ -1237,8 +1254,6 @@ body {
 }
 
 // .testimonial css end
-
-
 
 // Sea page css start
 
@@ -1508,14 +1523,13 @@ body {
         border-radius: 24px 24px 0 0;
         margin: 480px 100px 0 100px;
     }
-        .banner-shape {
+    .banner-shape {
         left: 0;
         top: 60%;
         transform: translateY(-60%);
         position: relative;
         z-index: 1;
     }
-
 }
 
 .subpage-page-banner2 {
@@ -1529,8 +1543,8 @@ body {
     padding: 156px 0 156px 0;
     transition: 0.6s all ease-in-out;
 
-    &.business-boost{
-        @media (max-width:991px) {
+    &.business-boost {
+        @media (max-width: 991px) {
             padding: 56px 0 56px 0;
         }
     }
@@ -1539,14 +1553,13 @@ body {
         border-radius: 24px 24px 0 0;
         margin: 480px 100px 0 100px;
     }
-        .banner-shape {
+    .banner-shape {
         left: 0;
         top: 60%;
         transform: translateY(-60%);
         position: relative;
         z-index: 1;
     }
-
 }
 
 .subpage-page-banner3 {
@@ -1564,14 +1577,13 @@ body {
         border-radius: 24px 24px 0 0;
         margin: 480px 100px 0 100px;
     }
-        .banner-shape {
+    .banner-shape {
         left: 0;
         top: 60%;
         transform: translateY(-60%);
         position: relative;
         z-index: 1;
     }
-
 }
 
 /*--- (2.0) --- Portfolio page style -/ End ---*/
@@ -1760,7 +1772,6 @@ body {
 }
 
 .portfolio-item-btn {
-
     &:hover {
         color: var(--gray_1);
 
@@ -1926,7 +1937,7 @@ body {
             font-weight: 700;
             color: #57738f;
 
-            @media (max-width:500px) {
+            @media (max-width: 500px) {
                 font-size: 17px !important;
             }
 
@@ -2344,7 +2355,7 @@ body {
     .owl-dots {
         display: none;
 
-        @media (max-width:1200px) {
+        @media (max-width: 1200px) {
             display: block !important;
             text-align: center;
             margin-top: 50px;
@@ -2418,7 +2429,6 @@ body {
     }
 }
 
-
 .fullwidth-highlight {
     background: url("../img/fullwidth-highlight-bg.jpg") no-repeat;
     padding: 80px 0;
@@ -2480,12 +2490,10 @@ body {
     counter-reset: so-counter;
 }
 
-
 .so-quality-title {
     padding: 15px 0;
 
     border-top: 1px solid #b8c5d4;
-
 
     &::before {
         counter-increment: so-counter;
@@ -2547,7 +2555,6 @@ body {
 }
 
 .contact-form {
-
     .form-control,
     .form-select {
         border: 1px solid #d2dbe2;
@@ -2782,8 +2789,6 @@ body {
 
 /*--- (7.1) --- Blog Details style -/ End ---*/
 
-
-
 // Animations CSS
 
 .design-tools-slider {
@@ -2805,7 +2810,6 @@ body {
 }
 
 .contact-form {
-
     .form-control,
     .form-select {
         border: 1px solid #d2dbe2;
@@ -2899,7 +2903,13 @@ body {
         height: 100%;
         top: 0;
         left: 0;
-        background: linear-gradient(90.72deg, #f3f6f8 0.48%, #f3f6f8 57.24%, rgba(243, 246, 248, 0.7) 79.97%, rgba(243, 246, 248, 0) 99.27%);
+        background: linear-gradient(
+            90.72deg,
+            #f3f6f8 0.48%,
+            #f3f6f8 57.24%,
+            rgba(243, 246, 248, 0.7) 79.97%,
+            rgba(243, 246, 248, 0) 99.27%
+        );
     }
 
     .text-area {
@@ -3054,11 +3064,6 @@ body {
 
 /*-- Context Menue CSS ---*/
 
-
-
-
-
-
 /*-- Portfolio details SEA -/Start ---*/
 .objective {
     padding: 40px;
@@ -3090,13 +3095,10 @@ body {
 
 /*-- Portfolio details SEA -/End ---*/
 
-
-
 /*-- Execution style -/Start ---*/
 .execution {
-    background: linear-gradient(180deg, rgba(232, 243, 255, 0.5) 0%, #E8F3FF 100%);
+    background: linear-gradient(180deg, rgba(232, 243, 255, 0.5) 0%, #e8f3ff 100%);
     z-index: 8;
-
 }
 
 .execution-shape-1 {
@@ -3113,13 +3115,11 @@ body {
 
 /*-- Execution style -/End ---*/
 
-
-
 /*-- Afzal bhai style -/End ---*/
 
 /*-- aws-features ---*/
 .aws-features {
-    background-image: url('../img/big-shape.svg'), url('../img/big-shape.svg');
+    background-image: url("../img/big-shape.svg"), url("../img/big-shape.svg");
     background-repeat: no-repeat;
     background-position: 7% 90%, 90% 7%;
 }
@@ -3210,7 +3210,7 @@ body {
                 width: 8px;
                 height: 8px;
                 margin: 0 8px;
-                background-color: #D2DBE2;
+                background-color: #d2dbe2;
                 border-radius: 50%;
 
                 &.active {
@@ -3221,7 +3221,6 @@ body {
     }
 }
 
-
 .user-flow {
     min-height: 710px;
 }
@@ -3231,12 +3230,11 @@ body {
 }
 
 .user-flow-img {
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 15px 30px 60px rgba(0, 36, 72, 0.1);
 }
 
 /*-- execution end ---*/
-
 
 /*-- blog-header-tab style -/End ---*/
 .blog-header-tab {
@@ -3244,7 +3242,7 @@ body {
         margin-bottom: -1.5px !important;
 
         .nav-link {
-            @media (max-width:1500px) {
+            @media (max-width: 1500px) {
                 font-size: 14px !important;
             }
 
@@ -3266,19 +3264,16 @@ body {
 
 /*-- blog-header-tab style -/End ---*/
 
-
-
-
 /*-- blog-main style  ---*/
 .blog-main {
     .blog-slide-active {
         .owl-item {
             .featured-image {
-                @media (min-width:991px) {
+                @media (min-width: 991px) {
                     height: 426px;
                 }
 
-                @media (max-width:991px) {
+                @media (max-width: 991px) {
                     width: 100% !important;
                 }
 
@@ -3286,7 +3281,7 @@ body {
                     border-radius: 12px;
                     width: 100% !important;
 
-                    @media (min-width:991px) {
+                    @media (min-width: 991px) {
                         height: 100%;
                     }
                 }
@@ -3297,14 +3292,14 @@ body {
             }
 
             .blog-info {
-                @media (max-width:991px) {
+                @media (max-width: 991px) {
                     width: 100% !important;
                 }
             }
         }
 
         .owl-nav {
-            @media (max-width:1400px) {
+            @media (max-width: 1400px) {
                 display: none !important;
             }
 
@@ -3319,7 +3314,7 @@ body {
         .owl-dots {
             margin-top: 30px;
 
-            @media (min-width:1400px) {
+            @media (min-width: 1400px) {
                 display: none !important;
             }
 
@@ -3376,8 +3371,6 @@ body {
 
 /*-- blog-main style -/End ---*/
 
-
-
 /*-- sidebar style  ---*/
 #sidebar {
     .sidebar-widget {
@@ -3386,7 +3379,8 @@ body {
         }
 
         .widget-body {
-            .categorise-list, .tag-list {
+            .categorise-list,
+            .tag-list {
                 a {
                     transition: all 0.3s linear;
 
@@ -3408,7 +3402,5 @@ body {
 }
 
 /*-- sidebar style -End ---*/
-
-
 
 /*-- Afzal bhai style -/End ---*/
