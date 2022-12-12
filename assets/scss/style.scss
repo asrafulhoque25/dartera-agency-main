@@ -1156,7 +1156,7 @@ body {
         transition: linear 0.3s;
 
         &:hover {
-            box-shadow: 15px 30px 60px rgba(0, 36, 72, 0.15);
+            box-shadow: 15px 30px 60px rgba(0, 36, 72, 0.10);
         }
     }
 }
@@ -3464,10 +3464,16 @@ body {
     padding: 30px 0;
 }
 
-// .common-border-bottom {
-//     &:nth-child(1) {
-//         padding-top: 0px;
-//         background-color: #003a75;
-//     }
-// }
+.branding-features {
+    .features-card {
+        box-shadow: 15px 30px 60px rgba(0, 36, 72, 0.05);
+    }
+}
+
+.rearch-section {
+    .list-card {
+        border: 1px solid rgba(1, 94, 165, 0.3);
+        box-shadow: none;
+    }
+}
 /*-- Branding page -/End ---*/
