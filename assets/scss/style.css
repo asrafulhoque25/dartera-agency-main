@@ -89,7 +89,10 @@ body {
   --light_white: #b5d5f4;
   --blue-eyes: #acd5ff;
   --dark_6: #d8e2df;
-  --cornflower-blue: #B5D5F4; }
+  --cornflower-blue: #b5d5f4; 
+  --cornflower-blue: #B5D5F4;
+  }
+
 
 /* reset, root - END */
 @media (min-width: 1400px) {
@@ -443,11 +446,13 @@ body {
 .h-52 {
   height: 52px; }
 
+
 .w-45 {
   width: 45%; }
 
 .w-55 {
   width: 55%; }
+
 
 /*--- (1.0) --- Home page style -/ Start ---*/
 .sub-title {
@@ -734,7 +739,11 @@ body {
   text-decoration: none;
   cursor: pointer;
   border-style: solid;
+
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
   transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out;
+
   border: none;
   border-radius: 4px; }
   .fill-btn.resource-filter-btn:hover {
@@ -743,6 +752,21 @@ body {
     color: var(--gray_1);
     background: #21fff6;
     border-color: #21fff6; }
+
+
+.fill-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: rgba(0, 0, 0, 0.05);
+  z-index: 1;
+  transition: width 0.3s ease-in-out; }
+
+.fill-btn:hover::after {
+  width: 100%; }
 
 .minimal-btn {
   padding: 15px 35px;
@@ -2037,8 +2061,10 @@ body {
 /*-- Portfolio details SEA -/End ---*/
 /*-- Execution style -/Start ---*/
 .execution {
+  background: linear-gradient(180deg, rgba(232, 243, 255, 0.5) 0%, #e8f3ff 100%);
   background: linear-gradient(180deg, rgba(232, 243, 255, 0.5) 0%, #E8F3FF 100%);
-  z-index: 8; }
+  z-index: 8; 
+  }
 
 .execution-shape-1 {
   left: 135px;
@@ -2107,6 +2133,7 @@ body {
       width: 8px;
       height: 8px;
       margin: 0 8px;
+      background-color: #d2dbe2;
       background-color: #D2DBE2;
       border-radius: 50%; }
       .abschluss .imageSlider .carousel-indicators button.active {
@@ -2119,6 +2146,7 @@ body {
   margin-top: -362px; }
 
 .user-flow-img {
+  background: #ffffff;
   background: #FFFFFF;
   box-shadow: 15px 30px 60px rgba(0, 36, 72, 0.1); }
 
@@ -2195,9 +2223,17 @@ body {
 /*-- sidebar style  ---*/
 #sidebar .sidebar-widget .widget-title {
   border-radius: 12px 12px 0px 0px; }
+
+#sidebar .sidebar-widget .widget-body .categorise-list a,
+#sidebar .sidebar-widget .widget-body .tag-list a {
+  transition: all 0.3s linear; }
+  #sidebar .sidebar-widget .widget-body .categorise-list a:hover,
+  #sidebar .sidebar-widget .widget-body .tag-list a:hover {
+
 #sidebar .sidebar-widget .widget-body .categorise-list a, #sidebar .sidebar-widget .widget-body .tag-list a {
   transition: all 0.3s linear; }
   #sidebar .sidebar-widget .widget-body .categorise-list a:hover, #sidebar .sidebar-widget .widget-body .tag-list a:hover {
+
     color: var(--gray_1); }
 #sidebar .sidebar-widget .widget-body .blog-title {
   display: block;

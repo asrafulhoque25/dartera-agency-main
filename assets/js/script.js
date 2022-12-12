@@ -254,6 +254,40 @@ $(window).on('load', function () {
      });
      // process2 -end
 
+     // process3
+     $(function () {
+         if ($("#process3").length) {
+             $("#process3").owlCarousel({
+                 loop: true,
+                 items: 3,
+                 margin: 30,
+                 center: true,
+                 autoplay: true,
+                 rewindNav: true,
+                 nav: false,
+                 autoplayTimeout: 3500,
+                 animateOut: "fadeOut",
+                 smartSpeed: 1500,
+                 navText: ["<i class='ni ni-arrow-long-left text-cyan fs-4'></i>", "<i class='ni ni-arrow-long-right text-cyan fs-4'></i>"],
+                 dots: false,
+                 autoplayHoverPause: true,
+                 stagePadding: 90,
+                 responsive: {
+                     0: {
+                         items: 1,
+                     },
+                     575: {
+                         items: 2,
+                     },
+                     1200: {
+                         items: 3,
+                     },
+                 },
+             });
+         }
+     });
+     // process3 -end
+
 
 
      // process Slider
