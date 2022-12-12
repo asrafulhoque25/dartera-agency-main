@@ -1064,9 +1064,13 @@ body {
         top: 0;
         height: 100%;
         width: 0;
+        background: rgba(0,0,0,.05);
+        z-index: 1;
+        transition: width .3s ease-in-out;
         background: rgba(0, 0, 0, 0.05);
         z-index: 1;
         transition: width 0.3s ease-in-out;
+
     }
 }
 .fill-btn {
@@ -1076,7 +1080,6 @@ body {
         }
     }
 }
-
 .minimal-btn {
     padding: 15px 35px;
     border: 1px solid var(--indigo_dye);
@@ -1295,6 +1298,10 @@ body {
 /*--- Task Section -/ Start ---*/
 .task-area {
     padding-top: 60px;
+
+    @media (max-width: 768px) {
+         padding-top: 30px;
+    }
 }
 
 .step-number {
@@ -1561,6 +1568,53 @@ body {
     &.banner-mt {
         border-radius: 24px 24px 0 0;
         margin: 480px 100px 0 100px;
+    }
+    .banner-shape {
+        left: 0;
+        top: 60%;
+        transform: translateY(-60%);
+        position: relative;
+        z-index: 1;
+    }
+}
+.error-banner {
+    min-height: 100vh !important;
+    // padding: 43px 0;
+    background-color: var(--indigo_dye);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    // padding: 156px 0 156px 0;
+    transition: 0.6s all ease-in-out;
+
+    &.business-boost {
+        @media (max-width: 991px) {
+            padding: 56px 0 56px 0;
+        }
+    }
+
+    &.banner-mt {
+        border-radius: 24px 24px 0 0;
+        margin: 480px 100px 0 100px;
+    }
+    .error-wrapper{
+        position: relative;;
+        z-index: 333;
+    }
+    .error-shape{
+         right: 0;
+        top: 60%;
+        transform: translateY(-60%);
+        position: absolute;
+        z-index: 10;
+    }
+    .error-shape3{
+         left: 75%;
+        top: 30%;
+        transform: translateY(-60%);
+        position: absolute;
+        z-index: 10;
     }
     .banner-shape {
         left: 0;
@@ -2447,7 +2501,7 @@ body {
 .we-offer-icon {
     width: 52px;
     height: 52px;
-    background: linear-gradient(180deg, #e0f2ff 0%, rgba(224, 242, 255, 0) 100%);
+    background: var(--gray_7)
 }
 
 /*--- (6.1) --- Strong optimize style -/ Start ---*/
@@ -3452,7 +3506,6 @@ body {
 
 
 
-
 /*-- Branding page -/Start ---*/
 .left-dash-border {
     padding-left: 30px !important;
@@ -3477,3 +3530,36 @@ body {
     }
 }
 /*-- Branding page -/End ---*/
+
+/*-- AGB ---*/
+
+.agb-feature{
+       background: #fff;
+    z-index: 8;
+
+    .features-bg-shape-1 {
+        top: 30%;
+        left: 100px;
+        z-index: -8;
+    }
+
+    .features-bg-shape-2 {
+        top: 70%;
+        left: 100px;
+        z-index: -8;
+    }
+    .features-bg-shape-3 {
+        top: 10%;
+        right: 100px;
+        z-index: -8;
+    }
+
+    .features-bg-shape-4 {
+        top: 50%;
+        right: 100px;
+        z-index: -8;
+    }
+
+}
+
+/*-- / AGB ---*/

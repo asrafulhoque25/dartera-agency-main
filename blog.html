@@ -59,7 +59,7 @@
     <!-- Main Coding Start Here -->
 
     <!-- header -/Start -->
-    <header id="header">
+    <header id="header" class="position-absolute top-0 start-0 end-0 w-100">
         <!-- navbar -/Start -->
         <div class="header">
             <div class="container-fluid p-0">
@@ -68,34 +68,61 @@
                         <a href="index.html" class="navbar-brand theme-logo">
                             <img src="assets/img/logo.svg" alt="logo" class="img-fluid">
                         </a>
-
-                        <div class="d-xxl-none d-flex align-items-center gap-4 contactInfo px-4">
-                            <a href="+41315520083" class=" text-decoration-none phone text-white fs-5">
+    
+                        <div class="d-xxl-none d-flex align-items-center ms-auto gap-sm-3 gap-2 contactInfo px-0 me-2">
+                            <div class="nav-item dropdown language pe-2">
+                                <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-0 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <!-- Deutsch -->
+                                    <img src="assets/img/language.png" class="img-fluid language-icon" alt="">
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end fade-down all-language ">
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            English
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            Hindi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            Bangla
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="tel:+41315520083" class=" text-decoration-none phone text-white fs-5">
                                 <span><img src="assets/img/call.svg" class="img-fluid" alt="call"></span>
-                                +41 31 552 00 83
                             </a>
-                            <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
-                                Termin vereinbaren
-                            </button>
+                            <a href="#" class=" text-decoration-none phone text-white fs-5">
+                                <span><img src="assets/img/appointment.png" class="img-fluid appointment"
+                                        alt="appointment"></span>
+                            </a>
+                            <!-- <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
+                                    Termin vereinbaren
+                                </button> -->
                         </div>
-
-
+    
+    
                         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                             data-bs-target="#nav-toggle" aria-controls="nav-toggle" aria-expanded="false"
                             aria-label="Toggle navigation">
                             <span><img src="assets/img/menu.png" class="img-fluid" alt=""></span>
                         </button>
-
-
-
+    
+    
+    
                         <div class="collapse navbar-collapse" id="nav-toggle">
                             <ul class="menu navbar-nav mx-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active py-4 px-0 mx-3 active fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link active py-xxl-4 py-2 px-0 mx-3 active fs-14 fw-bold text-uppercase"
                                         aria-current="page" href="index.html">Startseite</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
                                         href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Leistungen
                                     </a>
@@ -111,18 +138,17 @@
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo1.png"
                                                             class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
-                                                            alt="sidebarlogo">
+                                                            alt="sidebar logo">
                                                         <div>
                                                             <h5 class="fs-6 fw-bold text-indigo_dye">Webdesign</h5>
                                                             <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">
                                                                 Unvergessliche User Experience bieten</p>
                                                         </div>
-
+    
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10"
-                                                            viewBox="0 0 11 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -142,12 +168,11 @@
                                                             <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">Unterhalt,
                                                                 damit Ihre Website läuft</p>
                                                         </div>
-
+    
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10"
-                                                            viewBox="0 0 11 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -167,12 +192,11 @@
                                                             <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">Mit
                                                                 Relevanz gefunden werden</p>
                                                         </div>
-
+    
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10"
-                                                            viewBox="0 0 11 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -192,12 +216,11 @@
                                                             <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">Google Ads
                                                                 Werbung für sofortige Wirkung</p>
                                                         </div>
-
+    
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10"
-                                                            viewBox="0 0 11 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -217,12 +240,11 @@
                                                             <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">
                                                                 SEO-Content, der verkauft</p>
                                                         </div>
-
+    
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10"
-                                                            viewBox="0 0 11 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -242,12 +264,11 @@
                                                             <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">
                                                                 Wiedererkennungswert für Ihre Firma</p>
                                                         </div>
-
+    
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10"
-                                                            viewBox="0 0 11 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -267,12 +288,11 @@
                                                             <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">Wir
                                                                 bringen Bewegung auf Ihre Website</p>
                                                         </div>
-
+    
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10"
-                                                            viewBox="0 0 11 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -284,44 +304,41 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
                                         href="referenzen.html">Referenzen</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
                                         href="#">Über
                                         uns</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
                                         href="#">Kontakt</a>
                                 </li>
                             </ul>
-
-
+    
+    
                             <div class="nav-right d-flex align-items-center">
-                                <div class="nav-item dropdown language pe-2">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                <div class="nav-item dropdown language pe-2 d-xxl-block d-none">
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
                                         href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        German
+                                        Deutsch
                                     </a>
-                                    <ul class="dropdown-menu dropdown-menu-end fade-down">
+                                    <ul class="dropdown-menu dropdown-menu-end fade-down all-language ">
                                         <li>
-                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
-                                                href="#">
-                                                Action
+                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                                English
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
-                                                href="#">
-                                                Another action
+                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                                Hindi
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
-                                                href="#">
-                                                Something else here
+                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                                Bangla
                                             </a>
                                         </li>
                                     </ul>
@@ -335,35 +352,7 @@
                                         Termin vereinbaren
                                     </button>
                                 </div>
-                                <div class="sidebar">
-                                    <!-- <img src="assets/img/humbarger.svg" class="img-fluid" alt="sidebar"> -->
-
-                                    <!-- <svg width="24" height="18" viewBox="0 0 24 18" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="12" width="12" height="2" fill="#00BAEB" />
-                                                <rect x="12" y="16" width="12" height="2" fill="#00BAEB" />
-                                                <rect x="0" y="8" width="24" height="2" fill="#00BAEB" />
-                                            </svg> -->
-
-                                    <svg class="sidebarToggle d-block" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="12" y="3" width="24" height="2" fill="#00BAEB" />
-                                        <rect x="12" y="19" width="24" height="2" fill="#00BAEB" />
-                                        <rect x="0" y="11" width="24" height="2" fill="#00BAEB" />
-                                    </svg>
-
-
-
-                                    <svg class="sidebarClose d-none" width="22" height="20" viewBox="0 0 22 20"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="0.804688" y="17.7783" width="24" height="2"
-                                            transform="rotate(-45 0.804688 17.7783)" fill="#00BAEB" />
-                                        <rect x="2.21875" y="0.807617" width="24" height="2"
-                                            transform="rotate(45 2.21875 0.807617)" fill="#00BAEB" />
-                                    </svg>
-
-
-                                </div>
+    
                             </div>
                         </div>
                     </div>
@@ -373,7 +362,6 @@
         <!-- navbar -/End -->
     </header>
     <!--/ header -/End -->
-
 
     <!-- blog-header-tab -->
     <div class="blog-header-tab border-bottom">
@@ -983,14 +971,14 @@
                         <h4 class="fs-30 fw-bold text-white mb-2">
                             Newsletter
                         </h4>
-                        <p class="mb-0 text-gray_1_6">
+                        <p class="mb-0 text-dark_6">
                             Abonnieren Sie unseren Newsletter, um die neuesten <br class="d-none d-lg-block">
                             Nachrichten und Updates zu erhalten.
                         </p>
-
+    
                         <div class="subscribe-box mt-3 position-relative">
-                            <input class="subscribe-field radius-12 w-100 text-white " type="email"
-                                name="subscribe-mail" id="" placeholder="Geben Sie hier Ihre E-Mail ein">
+                            <input class="subscribe-field radius-12 w-100 text-white " type="email" name="subscribe-mail"
+                                id="" placeholder="Geben Sie hier Ihre E-Mail ein">
                             <div class="subscribe-btn">
                                 <a href="#"
                                     class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
@@ -1010,19 +998,19 @@
                 </div>
             </div>
             <!-- Fooetr top -/End -->
-
+    
             <!-- Fooetr Main -/Start -->
             <div class="footer-main">
                 <div class="row">
-
-                    <div class="col-sm-6 col-lg-3">
+    
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
-
+    
                             <a href="index.html" class="site-logo mb-30 d-inline-block">
                                 <img src="assets/img/footer-logo.svg" alt="">
                             </a>
-
-                            <ul class="widget-list list-unstyled m-0 d-flex flex-wrap gap-4">
+    
+                            <ul class="widget-list list-unstyled m-0 d-flex flex-wrap gap-lg-4 gap-3 ">
                                 <li class="widget-list-item pb-0">
                                     <a href="#" class="text-decoration-none text-white fs-6 d-flex align-items-center">
                                         <span class="pe-2 me-1 ">
@@ -1056,11 +1044,10 @@
                             </ul>
                         </div>
                     </div>
-
-                    <div class="col-sm-6 col-lg-3">
+    
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
-                            <h6
-                                class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
+                            <h6 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
                                 Unterhalten wir uns
                             </h6>
                             <ul class="widget-list list-unstyled m-0">
@@ -1080,7 +1067,7 @@
                                         </span>
                                     </a>
                                 </li>
-
+    
                                 <li class="widget-list-item pb-0">
                                     <a href="mailto:hey@dartera.ch"
                                         class="text-decoration-none text-white fs-5 d-flex align-items-center">
@@ -1100,11 +1087,10 @@
                             </ul>
                         </div>
                     </div>
-
-                    <div class="col-sm-6 col-lg-3">
+    
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
-                            <h6
-                                class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
+                            <h6 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
                                 Anschrift
                             </h6>
                             <ul class="widget-list list-unstyled m-0">
@@ -1116,11 +1102,10 @@
                             </ul>
                         </div>
                     </div>
-
-                    <div class="col-sm-6 col-lg-3">
+    
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
-                            <h6
-                                class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
+                            <h6 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
                                 Rechtliches
                             </h6>
                             <ul class="widget-list list-unstyled m-0">
@@ -1152,25 +1137,26 @@
                                         </span>
                                     </a>
                                 </li>
-
+    
                             </ul>
                         </div>
                     </div>
-
+    
                 </div>
             </div>
             <!-- Fooetr Main -/End -->
-
+    
             <div class="footer-bottom">
                 <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <div class="col text-white fw-medium">
+                    <div class="col-12 col-xl-5 text-xl-start text-center">
+                        <div class="text-white fw-medium">
                             © 2022 Dartera GmbH
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="footer-button-wrapper d-flex align-items-center justify-content-end gap-4">
-
+                    <div class="col-12 col-xl-7 text-xl-end text-center">
+                        <div
+                            class="footer-button-wrapper d-flex flex-wrap align-items-center justify-content-xl-end justify-content-center mt-xl-0 mt-4 gap-4">
+    
                             <div class="footer-common-btn">
                                 <a href="#"
                                     class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
@@ -1187,7 +1173,7 @@
                                     </span>
                                 </a>
                             </div>
-
+    
                             <div class="footer-common-btn">
                                 <a href="#"
                                     class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
@@ -1204,7 +1190,7 @@
                                     </span>
                                 </a>
                             </div>
-
+    
                             <div class="footer-common-btn">
                                 <a href="#"
                                     class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
@@ -1221,13 +1207,13 @@
                                     </span>
                                 </a>
                             </div>
-
+    
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <button type="button" class="border-0 rounded-pill" id="btn-back-to-top">
+        <button type="button" class="border-0 rounded-pill" id="back-to-top">
             <img src="assets/img/back-to-top-icon.svg" alt="Back To Top" class="img-fluid">
         </button>
     </footer>
