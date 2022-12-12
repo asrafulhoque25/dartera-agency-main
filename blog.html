@@ -59,7 +59,7 @@
     <!-- Main Coding Start Here -->
 
     <!-- header -/Start -->
-    <header id="header">
+    <header id="header" class="position-absolute top-0 start-0 end-0 w-100">
         <!-- navbar -/Start -->
         <div class="header">
             <div class="container-fluid p-0">
@@ -69,14 +69,41 @@
                             <img src="assets/img/logo.svg" alt="logo" class="img-fluid">
                         </a>
 
-                        <div class="d-xxl-none d-flex align-items-center gap-4 contactInfo px-4">
-                            <a href="+41315520083" class=" text-decoration-none phone text-white fs-5">
+                        <div class="d-xxl-none d-flex align-items-center ms-auto gap-sm-3 gap-2 contactInfo px-0 me-2">
+                            <div class="nav-item dropdown language pe-2">
+                                <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-0 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <!-- Deutsch -->
+                                    <img src="assets/img/language.png" class="img-fluid language-icon" alt="">
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end fade-down all-language ">
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            English
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            Hindi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            Bangla
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="tel:+41315520083" class=" text-decoration-none phone text-white fs-5">
                                 <span><img src="assets/img/call.svg" class="img-fluid" alt="call"></span>
-                                +41 31 552 00 83
                             </a>
-                            <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
-                                Termin vereinbaren
-                            </button>
+                            <a href="#" class=" text-decoration-none phone text-white fs-5">
+                                <span><img src="assets/img/appointment.png" class="img-fluid appointment"
+                                        alt="appointment"></span>
+                            </a>
+                            <!-- <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
+                                    Termin vereinbaren
+                                </button> -->
                         </div>
 
 
@@ -91,11 +118,11 @@
                         <div class="collapse navbar-collapse" id="nav-toggle">
                             <ul class="menu navbar-nav mx-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active py-4 px-0 mx-3 active fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link active py-xxl-4 py-2 px-0 mx-3 active fs-14 fw-bold text-uppercase"
                                         aria-current="page" href="index.html">Startseite</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
                                         href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Leistungen
                                     </a>
@@ -111,7 +138,7 @@
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo1.png"
                                                             class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
-                                                            alt="sidebarlogo">
+                                                            alt="sidebar logo">
                                                         <div>
                                                             <h5 class="fs-6 fw-bold text-indigo_dye">Webdesign</h5>
                                                             <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">
@@ -284,44 +311,44 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
                                         href="referenzen.html">Referenzen</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
                                         href="#">Über
                                         uns</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
                                         href="#">Kontakt</a>
                                 </li>
                             </ul>
 
 
                             <div class="nav-right d-flex align-items-center">
-                                <div class="nav-item dropdown language pe-2">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                <div class="nav-item dropdown language pe-2 d-xxl-block d-none">
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
                                         href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        German
+                                        Deutsch
                                     </a>
-                                    <ul class="dropdown-menu dropdown-menu-end fade-down">
+                                    <ul class="dropdown-menu dropdown-menu-end fade-down all-language ">
                                         <li>
                                             <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
                                                 href="#">
-                                                Action
+                                                English
                                             </a>
                                         </li>
                                         <li>
                                             <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
                                                 href="#">
-                                                Another action
+                                                Hindi
                                             </a>
                                         </li>
                                         <li>
                                             <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
                                                 href="#">
-                                                Something else here
+                                                Bangla
                                             </a>
                                         </li>
                                     </ul>
@@ -335,35 +362,7 @@
                                         Termin vereinbaren
                                     </button>
                                 </div>
-                                <div class="sidebar">
-                                    <!-- <img src="assets/img/humbarger.svg" class="img-fluid" alt="sidebar"> -->
 
-                                    <!-- <svg width="24" height="18" viewBox="0 0 24 18" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="12" width="12" height="2" fill="#00BAEB" />
-                                                <rect x="12" y="16" width="12" height="2" fill="#00BAEB" />
-                                                <rect x="0" y="8" width="24" height="2" fill="#00BAEB" />
-                                            </svg> -->
-
-                                    <svg class="sidebarToggle d-block" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="12" y="3" width="24" height="2" fill="#00BAEB" />
-                                        <rect x="12" y="19" width="24" height="2" fill="#00BAEB" />
-                                        <rect x="0" y="11" width="24" height="2" fill="#00BAEB" />
-                                    </svg>
-
-
-
-                                    <svg class="sidebarClose d-none" width="22" height="20" viewBox="0 0 22 20"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="0.804688" y="17.7783" width="24" height="2"
-                                            transform="rotate(-45 0.804688 17.7783)" fill="#00BAEB" />
-                                        <rect x="2.21875" y="0.807617" width="24" height="2"
-                                            transform="rotate(45 2.21875 0.807617)" fill="#00BAEB" />
-                                    </svg>
-
-
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -374,9 +373,8 @@
     </header>
     <!--/ header -/End -->
 
-
     <!-- blog-header-tab -->
-    <div class="blog-header-tab border-bottom">
+    <div class="blog-header-tab border-bottom mt-5 pt-5">
         <div class="container">
             <div class="blog-tab-list">
                 <ul class="nav nav-pills align-items-center justify-content-center mb-0" id="pills-tab" role="tablist">
@@ -445,8 +443,8 @@
                             Animations
                         </button>
                     </li>
-                    <li class="nav-item ms-auto">
-                        <button type="button" class="btn p-0">
+                    <li class="nav-item ms-lg-auto">
+                        <button type="button" class="btn search-btn p-0">
                             <img src="assets/img/search-icon.svg" alt="tab icon" class="img-fluid">
                         </button>
                     </li>
@@ -456,9 +454,22 @@
     </div>
     <!--/ blog-header-tab -->
 
+
+
     <!-- blog-main -->
-    <main class="blog-main py-5">
+    <main class="blog-main pb-5 mt-4">
         <div class="container">
+            <!-- search-wrap -->
+            <div class="searchBar">
+                <div class="search-wrap position-relative pb-4">
+                    <input type="text" class="form-control rounded-pill px-4 h-52 text-gray_5 fs-14 fw-normal"
+                        placeholder="Search..">
+                    <button type="submit" class="btn position-absolute">
+                        <img src="assets/img/search-icon.svg" alt="icon" class="img-fluid">
+                    </button>
+                </div>
+            </div>
+            <!-- search-wrap -End -->
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-Neueste" role="tabpanel" tabindex="0">
                     <div class="blogCart-section-title">
@@ -470,14 +481,14 @@
 
                     <!-- blog-slide-active -->
                     <div class="blog-slide-active owl-carousel owl-theme mb-5 pb-3">
-                        <div class="single-blog d-flex gap-4 align-items-center flex-wrap flex-lg-nowrap">
-                            <div class="featured-image w-75">
+                        <div class="single-blog">
+                            <div class="featured-image">
                                 <a href="#">
                                     <img src="assets/img/blog-featured-img.png" alt="Featured Image"
                                         class="img-fluid w-100 radius-4">
                                 </a>
                             </div>
-                            <div class="blog-info w-25">
+                            <div class="blog-info">
                                 <h6
                                     class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
                                     Dienstleistungen
@@ -505,14 +516,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="single-blog d-flex gap-4 align-items-center flex-wrap flex-lg-nowrap">
-                            <div class="featured-image w-75">
+                        <div class="single-blog">
+                            <div class="featured-image">
                                 <a href="#">
                                     <img src="assets/img/blog-details-featured-img.jpg" alt="Featured Image"
                                         class="img-fluid w-100 radius-4">
                                 </a>
                             </div>
-                            <div class="blog-info w-25">
+                            <div class="blog-info">
                                 <h6
                                     class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
                                     Dienstleistungen
@@ -540,14 +551,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="single-blog d-flex gap-4 align-items-center flex-wrap flex-lg-nowrap">
-                            <div class="featured-image w-75">
+                        <div class="single-blog">
+                            <div class="featured-image">
                                 <a href="#">
                                     <img src="assets/img/blog-featured-img.png" alt="Featured Image"
                                         class="img-fluid w-100 radius-4">
                                 </a>
                             </div>
-                            <div class="blog-info w-25">
+                            <div class="blog-info">
                                 <h6
                                     class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
                                     Dienstleistungen
@@ -822,14 +833,14 @@
 
                         <!-- blog-slide-active -->
                         <div class="blog-slide-active owl-carousel owl-theme mb-5 pb-3">
-                            <div class="single-blog d-flex gap-4 align-items-center flex-wrap flex-lg-nowrap">
-                                <div class="featured-image w-75">
+                            <div class="single-blog">
+                                <div class="featured-image">
                                     <a href="#">
                                         <img src="assets/img/blog-featured-img.png" alt="Featured Image"
                                             class="img-fluid w-100 radius-4">
                                     </a>
                                 </div>
-                                <div class="blog-info w-25">
+                                <div class="blog-info">
                                     <h6
                                         class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
                                         Dienstleistungen
@@ -858,14 +869,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="single-blog d-flex gap-4 align-items-center flex-wrap flex-lg-nowrap">
-                                <div class="featured-image w-75">
+                            <div class="single-blog">
+                                <div class="featured-image">
                                     <a href="#">
                                         <img src="assets/img/blog-details-featured-img.jpg" alt="Featured Image"
                                             class="img-fluid w-100 radius-4">
                                     </a>
                                 </div>
-                                <div class="blog-info w-25">
+                                <div class="blog-info">
                                     <h6
                                         class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
                                         Dienstleistungen
@@ -894,14 +905,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="single-blog d-flex gap-4 align-items-center flex-wrap flex-lg-nowrap">
-                                <div class="featured-image w-75">
+                            <div class="single-blog">
+                                <div class="featured-image">
                                     <a href="#">
                                         <img src="assets/img/blog-featured-img.png" alt="Featured Image"
                                             class="img-fluid w-100 radius-4">
                                     </a>
                                 </div>
-                                <div class="blog-info w-25">
+                                <div class="blog-info">
                                     <h6
                                         class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
                                         Dienstleistungen
@@ -983,7 +994,7 @@
                         <h4 class="fs-30 fw-bold text-white mb-2">
                             Newsletter
                         </h4>
-                        <p class="mb-0 text-gray_1_6">
+                        <p class="mb-0 text-dark_6">
                             Abonnieren Sie unseren Newsletter, um die neuesten <br class="d-none d-lg-block">
                             Nachrichten und Updates zu erhalten.
                         </p>
@@ -1015,14 +1026,14 @@
             <div class="footer-main">
                 <div class="row">
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
 
                             <a href="index.html" class="site-logo mb-30 d-inline-block">
                                 <img src="assets/img/footer-logo.svg" alt="">
                             </a>
 
-                            <ul class="widget-list list-unstyled m-0 d-flex flex-wrap gap-4">
+                            <ul class="widget-list list-unstyled m-0 d-flex flex-wrap gap-lg-4 gap-3 ">
                                 <li class="widget-list-item pb-0">
                                     <a href="#" class="text-decoration-none text-white fs-6 d-flex align-items-center">
                                         <span class="pe-2 me-1 ">
@@ -1057,7 +1068,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
                             <h6
                                 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
@@ -1101,7 +1112,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
                             <h6
                                 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
@@ -1117,7 +1128,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
                             <h6
                                 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
@@ -1163,13 +1174,14 @@
 
             <div class="footer-bottom">
                 <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <div class="col text-white fw-medium">
+                    <div class="col-12 col-xl-5 text-xl-start text-center">
+                        <div class="text-white fw-medium">
                             © 2022 Dartera GmbH
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="footer-button-wrapper d-flex align-items-center justify-content-end gap-4">
+                    <div class="col-12 col-xl-7 text-xl-end text-center">
+                        <div
+                            class="footer-button-wrapper d-flex flex-wrap align-items-center justify-content-xl-end justify-content-center mt-xl-0 mt-4 gap-4">
 
                             <div class="footer-common-btn">
                                 <a href="#"
@@ -1227,7 +1239,7 @@
                 </div>
             </div>
         </div>
-        <button type="button" class="border-0 rounded-pill" id="btn-back-to-top">
+        <button type="button" class="border-0 rounded-pill" id="back-to-top">
             <img src="assets/img/back-to-top-icon.svg" alt="Back To Top" class="img-fluid">
         </button>
     </footer>
