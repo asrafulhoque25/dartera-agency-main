@@ -2555,50 +2555,6 @@ body {
     background: var(--gray_7)
 }
 
-/*--- (6.1) --- Strong optimize style -/ Start ---*/
-// .strong-optimize {
-//     .accordion-list-item {
-//         border-top: 1px solid var(--gray_4);
-//         &:last-child {
-//             border-bottom: 1px solid var(--gray_4);
-//         }
-//         transition: 0.3s all linear;
-
-//         .accordion-title {
-//             cursor: pointer;
-//             margin-bottom: 0;
-//             padding: 21px 0;
-//             .ni-chevron-down {
-//                 color: var(--gray_1);
-//             }
-//         }
-
-//         .accordion-desc {
-//             padding-bottom: 20px;
-//         }
-
-//         &.open {
-//             border-top: 1px solid var(--gray_4);
-//             .accordion-title {
-//                 cursor: pointer;
-//                 color: var(--lapis_lazuli) !important;
-//                 .accordion-icon {
-//                     background: var(--flourescent_blue);
-
-//                     .ni-chevron-up {
-//                         color: var(--lapis_lazuli);
-//                         margin-bottom: 2px;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-
-//     .accordion-icon {
-//         width: 28px;
-//         height: 28px;
-//     }
-// }
 
 .so-website-quality {
     counter-reset: so-counter;
