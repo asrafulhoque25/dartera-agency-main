@@ -403,6 +403,11 @@ body {
         font-size: 1rem !important;
     }
 }
+.fs-4 {
+    @media (max-width: 470px) {
+        font-size: 1.2rem !important;
+    }
+}
 
 .fs-36 {
     font-size: 36px;
@@ -921,6 +926,9 @@ body {
             .btn-close {
                 left: -36% !important;
                 opacity: 1 !important;
+                 @media (max-width: 580px) {
+       left: -26% !important;
+    }
             }
         }
     }
@@ -963,6 +971,11 @@ body {
         &:focus {
             box-shadow: none;
         }
+        @media (max-width: 580px) {
+       background-size: 100px 114px;
+       width: 100px;
+       left: -26% !important;
+    }
     }
 }
 
@@ -1036,6 +1049,12 @@ body {
     right: 0;
     cursor: pointer;
     z-index: 990;
+
+        @media (max-width: 580px) {
+       img{
+        width: 100px;
+       }
+    }
 }
 
 .banner-right {
