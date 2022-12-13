@@ -1927,6 +1927,9 @@ body {
     .brand-wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
         gap: 30px;
         justify-content: center;
         align-items: center;
